@@ -1,0 +1,49 @@
+.EchoXen-Customer-Img {
+  width: 80% !important;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.card-banner {
+  background: #f1f1f1;
+  border-radius: 20px;
+  padding: 15px;
+}
+
+.card-banner img {
+  border-radius: 50%;
+}
+
+.card-banner2 {
+  background: #5f9d17;
+  border-radius: 20px;
+  padding: 35px;
+}
+
+.EchoXen-Why-Choose {
+  width: 55% !important;
+  margin: auto;
+  padding-top: 15px;
+}
+
+.btn-warning:hover {
+  transition: 0.05s ease-in-out;
+}
+
+@media screen and (max-width: 800px) {
+  .mbr-section-btn {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cid-uCLeqlrCHu {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .cid-sFCw1qGFAI .navbar .navbar-logo img {
+    height: 1.5rem !important;
+  }
+}

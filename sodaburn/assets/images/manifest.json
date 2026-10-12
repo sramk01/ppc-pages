@@ -1,0 +1,173 @@
+[
+  {
+    "filename": "sodaburn-favicon.webp",
+    "size": "512x512",
+    "width": 512,
+    "height": 512,
+    "alt": "SodaBurn Logo favicon",
+    "title": "SodaBurn Logo favicon",
+    "prompt": "Replacement image for SodaBurn logo favicon"
+  },
+  {
+    "filename": "sodaburn-og-image.webp",
+    "size": "1200x630",
+    "width": 1200,
+    "height": 630,
+    "alt": "SodaBurn Social share image",
+    "title": "SodaBurn Social share image",
+    "prompt": "Replacement image for SodaBurn social share image"
+  },
+  {
+    "filename": "sodaburn-twitter-image.webp",
+    "size": "1200x600",
+    "width": 1200,
+    "height": 600,
+    "alt": "SodaBurn Twitter/X share image",
+    "title": "SodaBurn Twitter/X share image",
+    "prompt": "Replacement image for SodaBurn twitter/x share image"
+  },
+  {
+    "filename": "sodaburn-hero.webp",
+    "size": "400x320",
+    "width": 400,
+    "height": 320,
+    "alt": "SodaBurn Hero product image",
+    "title": "SodaBurn Hero product image",
+    "prompt": "Replacement image for SodaBurn hero product image"
+  },
+  {
+    "filename": "sodaburn-product-main.webp",
+    "size": "520x375",
+    "width": 520,
+    "height": 375,
+    "alt": "SodaBurn Main product image",
+    "title": "SodaBurn Main product image",
+    "prompt": "Replacement image for SodaBurn main product image"
+  },
+  {
+    "filename": "sodaburn-product-package-1.webp",
+    "size": "520x375",
+    "width": 520,
+    "height": 375,
+    "alt": "SodaBurn Two pouch package",
+    "title": "SodaBurn Two pouch package",
+    "prompt": "Replacement image for SodaBurn two pouch package"
+  },
+  {
+    "filename": "sodaburn-product-package-2.webp",
+    "size": "400x320",
+    "width": 400,
+    "height": 320,
+    "alt": "SodaBurn Three pouch package",
+    "title": "SodaBurn Three pouch package",
+    "prompt": "Replacement image for SodaBurn three pouch package"
+  },
+  {
+    "filename": "sodaburn-product-package-3.webp",
+    "size": "520x320",
+    "width": 520,
+    "height": 320,
+    "alt": "SodaBurn Six pouch package",
+    "title": "SodaBurn Six pouch package",
+    "prompt": "Replacement image for SodaBurn six pouch package"
+  },
+  {
+    "filename": "sodaburn-pricing.webp",
+    "size": "1037x916",
+    "width": 1037,
+    "height": 916,
+    "alt": "SodaBurn Pricing package image",
+    "title": "SodaBurn Pricing package image",
+    "prompt": "Replacement image for SodaBurn pricing package image"
+  },
+  {
+    "filename": "sodaburn-customer-review-1.webp",
+    "size": "125x145",
+    "width": 125,
+    "height": 145,
+    "alt": "SodaBurn Customer review photo",
+    "title": "SodaBurn Customer review photo",
+    "prompt": "Replacement image for SodaBurn customer review photo"
+  },
+  {
+    "filename": "sodaburn-customer-review-2.webp",
+    "size": "125x125",
+    "width": 125,
+    "height": 125,
+    "alt": "SodaBurn Customer review photo",
+    "title": "SodaBurn Customer review photo",
+    "prompt": "Replacement image for SodaBurn customer review photo"
+  },
+  {
+    "filename": "sodaburn-customer-review-3.webp",
+    "size": "125x125",
+    "width": 125,
+    "height": 125,
+    "alt": "SodaBurn Customer review photo",
+    "title": "SodaBurn Customer review photo",
+    "prompt": "Replacement image for SodaBurn customer review photo"
+  },
+  {
+    "filename": "sodaburn-guarantee.webp",
+    "size": "474x313",
+    "width": 474,
+    "height": 313,
+    "alt": "SodaBurn Money-back guarantee badge",
+    "title": "SodaBurn Money-back guarantee badge",
+    "prompt": "Replacement image for SodaBurn money-back guarantee badge"
+  },
+  {
+    "filename": "sodaburn-certified.webp",
+    "size": "1761x297",
+    "width": 1761,
+    "height": 297,
+    "alt": "SodaBurn Certification badges",
+    "title": "SodaBurn Certification badges",
+    "prompt": "Replacement image for SodaBurn certification badges"
+  },
+  {
+    "filename": "sodaburn-free-shipping.webp",
+    "size": "592x591",
+    "width": 592,
+    "height": 591,
+    "alt": "SodaBurn Free shipping image",
+    "title": "SodaBurn Free shipping image",
+    "prompt": "Replacement image for SodaBurn free shipping image"
+  },
+  {
+    "filename": "sodaburn-checkout-page.webp",
+    "size": "909x1759",
+    "width": 909,
+    "height": 1759,
+    "alt": "SodaBurn Checkout page preview",
+    "title": "SodaBurn Checkout page preview",
+    "prompt": "Replacement image for SodaBurn checkout page preview"
+  },
+  {
+    "filename": "sodaburn-bonus-1.webp",
+    "size": "509x291",
+    "width": 509,
+    "height": 291,
+    "alt": "SodaBurn Bonus image",
+    "title": "SodaBurn Bonus image",
+    "prompt": "Replacement image for SodaBurn bonus image"
+  },
+  {
+    "filename": "sodaburn-bonus-2.webp",
+    "size": "400x514",
+    "width": 400,
+    "height": 514,
+    "alt": "SodaBurn Bonus image",
+    "title": "SodaBurn Bonus image",
+    "prompt": "Replacement image for SodaBurn bonus image"
+  },
+  {
+    "filename": "sodaburn-bonus-3.webp",
+    "size": "509x500",
+    "width": 509,
+    "height": 500,
+    "alt": "SodaBurn Bonus image",
+    "title": "SodaBurn Bonus image",
+    "prompt": "Replacement image for SodaBurn bonus image"
+  }
+]

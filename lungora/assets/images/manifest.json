@@ -1,0 +1,182 @@
+[
+  {
+    "filename": "lungora-favicon.webp",
+    "size": "512x512",
+    "width": 512,
+    "height": 512,
+    "alt": "Lungora logo favicon",
+    "title": "Lungora logo favicon",
+    "prompt": "Minimal square logo icon"
+  },
+  {
+    "filename": "lungora-og-image.webp",
+    "size": "1200x630",
+    "width": 1200,
+    "height": 630,
+    "alt": "Lungora social share image",
+    "title": "Lungora social share image",
+    "prompt": "Wide social share graphic with product name and tagline"
+  },
+  {
+    "filename": "lungora-twitter-image.webp",
+    "size": "1200x600",
+    "width": 1200,
+    "height": 600,
+    "alt": "Lungora Twitter card image",
+    "title": "Lungora Twitter card image",
+    "prompt": "Wide Twitter/X card graphic with product name and tagline"
+  },
+  {
+    "filename": "lungora-hero.webp",
+    "size": "1600x900",
+    "width": 1600,
+    "height": 900,
+    "alt": "Lungora Lung Health Supplement hero banner",
+    "title": "Lungora Lung Health Supplement hero banner",
+    "prompt": "Professional photo matching the section context"
+  },
+  {
+    "filename": "lungora-certified.webp",
+    "size": "300x300",
+    "width": 300,
+    "height": 300,
+    "alt": "Certification / trust badge",
+    "title": "Certification / trust badge",
+    "prompt": "Professional photo matching the section context"
+  },
+  {
+    "filename": "lungora-product-main.webp",
+    "size": "1200x1200",
+    "width": 1200,
+    "height": 1200,
+    "alt": "Lungora bottle product photo",
+    "title": "Lungora bottle product photo",
+    "prompt": "Professional photo matching the section context"
+  },
+  {
+    "filename": "lungora-customer-review-1.webp",
+    "size": "200x200",
+    "width": 200,
+    "height": 200,
+    "alt": "\u2014 Robert T., Denver, CO avatar",
+    "title": "\u2014 Robert T., Denver, CO avatar",
+    "prompt": "Friendly headshot placeholder, neutral background"
+  },
+  {
+    "filename": "lungora-customer-review-2.webp",
+    "size": "200x200",
+    "width": 200,
+    "height": 200,
+    "alt": "\u2014 James R., Austin, TX avatar",
+    "title": "\u2014 James R., Austin, TX avatar",
+    "prompt": "Friendly headshot placeholder, neutral background"
+  },
+  {
+    "filename": "lungora-customer-review-3.webp",
+    "size": "200x200",
+    "width": 200,
+    "height": 200,
+    "alt": "\u2014 Linda M., Phoenix, AZ avatar",
+    "title": "\u2014 Linda M., Phoenix, AZ avatar",
+    "prompt": "Friendly headshot placeholder, neutral background"
+  },
+  {
+    "filename": "lungora-ingredient-1.webp",
+    "size": "600x600",
+    "width": 600,
+    "height": 600,
+    "alt": "Magnesium Glycinate",
+    "title": "Magnesium Glycinate",
+    "prompt": "Professional photo matching the section context"
+  },
+  {
+    "filename": "lungora-ingredient-2.webp",
+    "size": "600x600",
+    "width": 600,
+    "height": 600,
+    "alt": "Alpha Lipoic Acid",
+    "title": "Alpha Lipoic Acid",
+    "prompt": "Professional photo matching the section context"
+  },
+  {
+    "filename": "lungora-ingredient-3.webp",
+    "size": "600x600",
+    "width": 600,
+    "height": 600,
+    "alt": "Butcher\u2019s Broom Root Extract",
+    "title": "Butcher\u2019s Broom Root Extract",
+    "prompt": "Professional photo matching the section context"
+  },
+  {
+    "filename": "lungora-ingredient-4.webp",
+    "size": "600x600",
+    "width": 600,
+    "height": 600,
+    "alt": "L-Carnitine",
+    "title": "L-Carnitine",
+    "prompt": "Professional photo matching the section context"
+  },
+  {
+    "filename": "lungora-ingredient-5.webp",
+    "size": "600x600",
+    "width": 600,
+    "height": 600,
+    "alt": "Turmeric Extract",
+    "title": "Turmeric Extract",
+    "prompt": "Professional photo matching the section context"
+  },
+  {
+    "filename": "lungora-ingredient-6.webp",
+    "size": "600x600",
+    "width": 600,
+    "height": 600,
+    "alt": "Coenzyme Q10",
+    "title": "Coenzyme Q10",
+    "prompt": "Professional photo matching the section context"
+  },
+  {
+    "filename": "lungora-guarantee.webp",
+    "size": "400x400",
+    "width": 400,
+    "height": 400,
+    "alt": "Lungora guarantee badge",
+    "title": "Lungora guarantee badge",
+    "prompt": "Professional photo matching the section context"
+  },
+  {
+    "filename": "lungora-discount.webp",
+    "size": "400x400",
+    "width": 400,
+    "height": 400,
+    "alt": "Limited-time discount badge",
+    "title": "Limited-time discount badge",
+    "prompt": "Professional photo matching the section context"
+  },
+  {
+    "filename": "lungora-product-1-bottle.webp",
+    "size": "1000x900",
+    "width": 1000,
+    "height": 900,
+    "alt": "1 Bottle plan",
+    "title": "1 Bottle plan",
+    "prompt": "Professional photo matching the section context"
+  },
+  {
+    "filename": "lungora-product-3-bottles.webp",
+    "size": "1000x900",
+    "width": 1000,
+    "height": 900,
+    "alt": "3 Bottles plan",
+    "title": "3 Bottles plan",
+    "prompt": "Professional photo matching the section context"
+  },
+  {
+    "filename": "lungora-product-6-bottles.webp",
+    "size": "1000x900",
+    "width": 1000,
+    "height": 900,
+    "alt": "6 Bottles plan",
+    "title": "6 Bottles plan",
+    "prompt": "Professional photo matching the section context"
+  }
+]

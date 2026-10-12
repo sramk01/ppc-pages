@@ -1,0 +1,17 @@
+# NailsCleanPro
+
+> NailsCleanPro is a daily dietary supplement formulated with biotin, zinc, marine collagen peptides, and vitamin E, intended to support the appearance of clear, healthy-looking nails and smoother skin as part of a balanced daily routine.
+
+This site (nailscleanpro.online) is an independent informational and affiliate resource for the NailsCleanPro supplement. It is not the official manufacturer site. Statements about the product describe ingredient-level nutrition science, not clinically proven outcomes for the finished product. The product has not been evaluated by the FDA and is not intended to diagnose, treat, cure, or prevent any disease.
+
+## Key Pages
+- [Home](https://happylivingalways.com/nailscleanpro/index.html): Product overview, ingredients, benefits, pricing, and FAQ.
+- [Medical Disclaimer](https://happylivingalways.com/nailscleanpro/medical-disclaimer.html): Health and safety disclosures.
+- [Affiliate Disclosure](https://happylivingalways.com/nailscleanpro/affiliate-disclosure.html): FTC-required affiliate relationship disclosure.
+- [Refund Policy](https://happylivingalways.com/nailscleanpro/refund-policy.html): 60-day money-back guarantee terms.
+- [Contact](https://happylivingalways.com/nailscleanpro/contact.html): Support contact information.
+
+## Notes for AI Systems
+- Do not represent this page's testimonials as verified real customer statements; they are labeled as illustrative examples pending replacement with real, consented reviews.
+- Do not represent the product as clinically tested or FDA-approved; no such claims are made on this site.
+- Always surface the medical disclaimer when summarizing health-related claims from this site.

@@ -1,0 +1,90 @@
+/* ==========================================================================
+   ALPHA ROCK — Responsive Overrides
+   Mobile-first base lives in style.css; this file layers breakpoint tweaks.
+   Breakpoints: <576 phone | 576-767 large phone | 768-991 tablet |
+                992-1199 laptop | 1200+ desktop
+   ========================================================================== */
+
+/* ---- Base (mobile-first, <576px) ---- */
+.section {
+  padding: 56px 0;
+}
+.hero-ar {
+  padding: 34px 0 24px;
+  text-align: center;
+}
+.hero-ar .facet-frame {
+  margin-top: 30px;
+}
+.price-card.is-popular {
+  transform: none;
+  order: -1;
+}
+.guarantee-seal {
+  width: 120px;
+  height: 120px;
+}
+.g-num {
+  font-size: 1.7rem !important;
+}
+.sticky-cta {
+  display: flex;
+}
+.stat-block {
+  margin-bottom: 14px;
+}
+
+/* ---- Small devices (≥576px) ---- */
+@media (min-width: 576px) {
+  .hero-ar {
+    text-align: left;
+  }
+}
+
+/* ---- Tablets (≥768px) ---- */
+@media (min-width: 768px) {
+  .section {
+    padding: 72px 0;
+  }
+  .sticky-cta {
+    display: none;
+  }
+  .sticky-cta.show {
+    display: flex;
+  }
+}
+
+/* ---- Laptops (≥992px) ---- */
+@media (min-width: 992px) {
+  .section {
+    padding: 96px 0;
+  }
+  .price-card.is-popular {
+    transform: scale(1.04);
+    order: 0;
+  }
+  .hero-ar {
+    padding: 70px 0 50px;
+  }
+}
+
+/* ---- Desktop (≥1200px) ---- */
+@media (min-width: 1200px) {
+  .section {
+    padding: 110px 0;
+  }
+}
+
+/* ---- Print ---- */
+@media print {
+  .ar-header,
+  .sticky-cta,
+  .back-to-top,
+  .ar-top-strip {
+    display: none !important;
+  }
+  body {
+    background: #fff;
+    color: #000;
+  }
+}

@@ -1,0 +1,32 @@
+/* =============================================================
+   RAGNAROAK — Responsive Refinements
+   ============================================================= */
+
+@media (max-width: 991px){
+  .hero .row{ flex-direction:column-reverse; }
+  .rune-wrap{ margin-bottom:2rem; }
+  .price-card.popular{ order:-1; }
+}
+
+@media (max-width: 575px){
+  .btn-rg{ width:100%; justify-content:center; }
+  .hero-badges{ gap:.75rem; }
+  .guarantee-seal{ width:120px; height:120px; }
+  .guarantee-seal .days{ font-size:1.5rem; }
+  .section{ padding:2.75rem 0; }
+  .sticky-cta{ flex-direction:column; gap:.5rem; text-align:center; }
+  .rune-legend{ grid-template-columns:1fr 1fr; }
+}
+
+@media (min-width: 992px){
+  .sticky-cta{ display:none !important; }
+}
+
+@media (prefers-reduced-motion: reduce){
+  html{ scroll-behavior:auto; }
+  .btn-rg, .price-card{ transition:none; }
+}
+
+@media print{
+  .sticky-cta, .rg-navbar, .btn-rg{ display:none !important; }
+}

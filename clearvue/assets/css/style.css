@@ -1,0 +1,1507 @@
+:root {
+    --ak-ocean-deep: #023020;
+    --ak-ocean: #023020;
+    --ak-aqua: #35C2C1;
+    --ak-aqua-deep: #1F9E9D;
+    --ak-sand: #0b6a493e;
+    --ak-sand-panel: #023020e4;
+    --ak-coral: #FF7A59;
+    --ak-ink: #1D2624;
+    --ak-ink-soft: #566361;
+    --ak-white: #FFFFFF;
+    --ak-radius-lg: 28px;
+    --ak-radius-md: 18px;
+    --ak-radius-sm: 12px;
+    --ak-shadow: 0 20px 44px -22px rgba(14, 59, 60, 0.42);
+    --ss-citron: #1F9E9D;
+    --ss-citron-deep: #1F9E9D;
+    --ss-radius-lg: 26px;
+    --ss-radius-md: 16px;
+    --ss-radius-sm: 10px;
+    --ss-shadow: 0 20px 44px -22px rgba(33, 31, 58);
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--ak-ink);
+    background-color: var(--ak-sand);
+    padding-top: 68px;
+}
+
+section {
+    scroll-margin-top: 68px;
+}
+
+img {
+    max-width: 100%;
+}
+
+h2 {
+    font-size: 2.1rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1.5rem !important;
+}
+
+.ak-tint {
+    background-color: var(--ak-sand-panel);
+}
+
+/* ---------- Navbar (fixed on every screen size) ---------- */
+.ak-nav {
+    background-color: #023020;
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid rgba(53, 194, 193, 0.2);
+}
+
+.ak-logo {
+
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: var(--ak-white) !important;
+    display: inline-flex;
+    align-items: center;
+
+}
+
+
+
+.ak-logo-tm {
+    color: #C5881B;
+
+}
+
+.ak-toggler {
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.ak-navlink {
+    color: rgba(255, 255, 255, 0.82) !important;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.ak-navlink:hover {
+    color: var(--ak-aqua) !important;
+}
+
+/* ---------- Buttons ---------- */
+.ak-btn-cta {
+    background-color: goldenrod;
+    border: 1px solid var(--ak-aqua);
+    color: black;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.ak-btn-cta:hover {
+    background-color: goldenrod;
+    border-color: var(--ak-aqua-deep);
+    color: black;
+}
+
+.ak-btn-ghost {
+    background-color: transparent;
+    border: 1.5px solid rgba(255, 255, 255, 0.5);
+    color: var(--ak-white);
+    font-weight: 600;
+}
+
+.ak-btn-ghost:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+    color: var(--ak-white);
+    border-color: var(--ak-white);
+}
+
+.ak-btn-ghost-dark {
+    background-color: transparent;
+    border: 1.5px solid var(--ak-ocean);
+    color: var(--ak-ocean);
+    font-weight: 700;
+}
+
+.ak-btn-ghost-dark:hover {
+    background-color: var(--ak-ocean);
+    color: var(--ak-white);
+}
+
+/* ---------- Hero ---------- */
+.ak-hero {
+    background: linear-gradient(135deg, #023020, #05560993);
+    padding-top: 4.5rem;
+    position: relative;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+}
+
+.ak-hero-inner {
+    padding-bottom: 3rem;
+}
+
+.ak-kicker {
+    display: inline-block;
+    color: goldenrod;
+    font-weight: 700;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 1rem;
+    border-radius: 15px;
+    border: 1px solid gold;
+    padding: 5px;
+}
+
+.ak-h1 {
+    color: var(--ak-white);
+    font-weight: 700;
+    font-size: 2.65rem;
+    line-height: 1.18;
+    margin-bottom: .50rem;
+}
+
+.ak-lead {
+    color: rgba(255, 255, 255);
+    margin-bottom: 1rem;
+}
+
+.ak-lead-secondary {
+    color: rgba(255, 255, 255);
+    margin-bottom: 1.6rem;
+}
+
+.ak-chip {
+    display: inline-block;
+    background-color: rgba(53, 194, 193, 0.14);
+    color: white;
+    border: 1px solid rgba(53, 194, 193, 0.4);
+    border-radius: 999px;
+    padding: 0.4rem 0.95rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.ak-hero-visual {
+    position: relative;
+}
+
+.ak-hero-ring {
+    position: absolute;
+    top: -2.5rem;
+    right: -2.5rem;
+    width: 240px;
+    height: 240px;
+    border: 26px solid rgba(53, 194, 193, 0.14);
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.ak-hero-frame {
+    position: relative;
+    z-index: 1;
+    background-color: var(--ak-white);
+    border-radius: var(--ak-radius-lg);
+    padding: 1.75rem;
+    box-shadow: var(--ak-shadow);
+}
+
+/* signature wave divider under hero copy, before stat bar */
+
+.ak-stat-bar {
+    background-color: var(--ak-ocean-deep);
+    padding: 0.5rem 0 2rem;
+}
+
+.ak-stat-num {
+
+    color: white;
+    font-size: 1.55rem;
+    font-weight: 700;
+}
+
+.ak-stat-label {
+    color: rgba(255, 255, 255);
+
+}
+
+/* ---------- Section headings ---------- */
+.ak-eyebrow {
+    display: inline-block;
+    color: var(--ak-coral);
+    font-weight: 700;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+
+    margin-bottom: 0.6rem;
+}
+
+.ak-h2 {
+    font-weight: 700;
+    color: var(--ak-ocean-deep);
+    margin-bottom: 0.5rem;
+}
+
+.ak-intro {
+    color: var(--ak-ink-soft);
+   
+}
+
+.ak-body {
+    color: var(--ak-ink-soft);
+
+    margin-bottom: 1.1rem;
+}
+
+.ak-photo-card {
+    background-color: var(--ak-white);
+    border-radius: var(--ak-radius-lg);
+
+   
+    text-align: center;
+}
+
+/* ---------- Formula pill cards ---------- */
+.ak-pill-card {
+    background-color: var(--ak-white);
+    border: 1px solid rgba(14, 59, 60, 0.08);
+    border-radius: var(--ak-radius-md);
+    padding: 2rem 1.4rem;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ak-pill-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--ak-shadow);
+}
+
+.ak-pill-icon {
+    width: 54px;
+    height: 54px;
+    margin: 0 auto 1rem;
+    border-radius: 50%;
+    background-color: rgba(53, 194, 193, 0.14);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.35rem;
+}
+
+.ak-pill-title {
+
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--ak-ocean-deep);
+}
+
+.ak-pill-text {
+    color: var(--ak-ink-soft);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* ---------- Standard / trust cards ---------- */
+.ak-standard-card {
+    background-color: var(--ak-white);
+    border-radius: var(--ak-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--ak-shadow);
+}
+
+.ak-standard-img {
+    padding: 1.25rem 1.25rem 0;
+    text-align: center;
+}
+
+.ak-standard-img img {
+    width: 75%;
+    display: block;
+    margin: 0 auto;
+}
+
+.ak-standard-body {
+    padding: 1.5rem;
+}
+
+.ak-badge {
+    display: inline-block;
+    border-radius: 999px;
+    padding: 0.35rem 0.9rem;
+    font-size: 0.78rem;
+    font-weight: 700;
+    margin-bottom: 0.6rem;
+}
+
+.ak-badge-a {
+    background-color: var(--ak-ocean);
+    color: var(--ak-white);
+}
+
+.ak-badge-b {
+    background-color: var(--ak-aqua);
+    color: var(--ak-ocean-deep);
+}
+
+.ak-badge-c {
+    background-color: var(--ak-coral);
+    color: var(--ak-white);
+}
+
+.ak-badge-d {
+    background-color: var(--ak-ocean-deep);
+    color: var(--ak-white);
+}
+
+.ak-standard-title {
+
+    font-weight: 600;
+    font-size: 1.12rem;
+    color: var(--ak-ocean-deep);
+    margin-bottom: 0.5rem;
+}
+
+.ak-standard-text {
+    color: var(--ak-ink-soft);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* ---------- Reviews ---------- */
+.ak-review-card {
+    background-color: var(--ak-white);
+    border-radius: var(--ak-radius-md);
+    padding: 1.75rem;
+    box-shadow: var(--ak-shadow);
+}
+
+.ak-review-head {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    margin-bottom: 0.9rem;
+}
+
+
+
+.ak-review-avatar {
+    border-radius: 50%;
+    object-fit: fill;
+    height: 150px;
+    width: 150px;
+}
+
+.ak-review-name {
+    font-weight: 700;
+    margin: 0;
+    color: var(--ak-ocean-deep);
+}
+
+.ak-review-loc {
+    font-size: 1.1rem !important;
+    color: var(--ak-ink-soft);
+    margin: 0;
+}
+
+.ak-review-stars {
+    color: var(--ak-aqua-deep);
+    margin-bottom: 0.6rem;
+}
+
+.ak-review-text {
+    font-size: 0.92rem;
+    color: var(--ak-ink-soft);
+    margin: 0;
+}
+
+/* ---------- Flow / process cards ---------- */
+.ak-flow-card {
+    background-color: var(--ak-white);
+    border-radius: var(--ak-radius-md);
+    padding: 1.75rem 1.4rem;
+    text-align: center;
+    border-top: 3px solid var(--ak-aqua);
+    box-shadow: var(--ak-shadow);
+}
+
+.ak-flow-tag {
+    display: inline-block;
+    color: var(--ak-coral);
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 0.6rem;
+}
+
+.ak-flow-title {
+    font-weight: 600;
+    color: var(--ak-ocean-deep);
+    margin-bottom: 0.5rem;
+}
+
+.ak-flow-text {
+    font-size: 0.88rem;
+    color: var(--ak-ink-soft);
+    margin: 0;
+}
+
+/* ---------- Benefits ---------- */
+.ak-benefit-card {
+    background-color: var(--ak-white);
+    border: 1px solid rgba(14, 59, 60, 0.08);
+    border-radius: var(--ak-radius-md);
+    padding: 1.75rem;
+}
+
+.ak-benefit-title {
+
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--ak-ocean-deep);
+    margin-bottom: 0.5rem;
+}
+
+.ak-benefit-text {
+    font-size: 0.9rem;
+    color: var(--ak-ink-soft);
+    margin: 0;
+}
+
+/* ---------- Guarantee ---------- */
+.ak-guarantee-card {
+    background-color: var(--ak-ocean-deep);
+    border-radius: var(--ak-radius-lg);
+    padding: 3rem;
+    color: var(--ak-white);
+}
+
+.ak-guarantee-badge {
+    max-width: 340px;
+    margin: 0 auto;
+}
+
+.ak-guarantee-text {
+    color: rgba(255, 255, 255, 0.78);
+
+    margin-bottom: 1.5rem;
+}
+
+.ak-guarantee-chip {
+    background-color: var(--ak-white);
+    color: var(--ak-ocean-deep);
+    border-radius: var(--ak-radius-sm);
+    padding: 0.85rem;
+    font-size: 0.88rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* ---------- Ingredients ---------- */
+.ak-ing-card {
+    background-color: var(--ak-white);
+    border-radius: var(--ak-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--ak-shadow);
+    border: 1px solid darkgreen;
+}
+
+.ak-ing-image {
+    width: 100%;
+
+}
+
+.ak-ing-body {
+    padding: 1.6rem;
+}
+
+.ak-ing-title {
+
+    font-weight: 600;
+
+    color: var(--ak-ocean-deep);
+    margin-bottom: 0.5rem;
+}
+
+.ak-ing-text {
+    font-size: 0.9rem;
+    color: var(--ak-ink-soft);
+    margin: 0;
+}
+
+/* ---------- Bonuses ---------- */
+.ak-bonus-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.ak-bonus-item {
+    background-color: var(--ak-white);
+    border-radius: var(--ak-radius-md);
+    padding: 1.5rem;
+    box-shadow: var(--ak-shadow);
+}
+
+.ak-bonus-thumb {
+    width: 100%;
+    height: 130px;
+    border-radius: var(--ak-radius-sm);
+    overflow: hidden;
+    background-color: rgba(53, 194, 193, 0.1);
+    margin-bottom: 1rem;
+}
+
+.ak-bonus-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ak-strike {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.ak-bonus-title {
+
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--ak-ocean-deep);
+    margin: 0.5rem 0 0.4rem;
+}
+
+.ak-bonus-text {
+    font-size: 0.88rem;
+    color: var(--ak-ink-soft);
+    margin: 0;
+}
+
+.ak-bonus-total {
+    background-color: var(--ak-ocean-deep);
+    color: var(--ak-white);
+    border-radius: var(--ak-radius-md);
+    padding: 1.6rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.ak-bonus-total-title {
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+}
+
+.ak-bonus-total-text {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* ---------- Countdown ---------- */
+.ak-countdown-box {
+    background-color: var(--ak-ocean-deep);
+    color: white;
+    border-radius: var(--ak-radius-sm);
+    padding: 0.75rem 1.4rem;
+    text-align: center;
+    min-width: 84px;
+}
+
+.ak-countdown-box span:first-child {
+    display: block;
+
+    font-size: 1.45rem;
+    font-weight: 700;
+    color: white;
+}
+
+.ak-countdown-label {
+    display: block;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+
+/* ---------- FAQ / Accordion ---------- */
+.ak-accordion-item {
+    border: none;
+    border-radius: var(--ak-radius-md) !important;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    box-shadow: 0 8px 20px -14px rgba(14, 59, 60, 0.4);
+    font-size: 1.4rem;
+}
+
+.ak-accordion-btn {
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: var(--ak-ocean-deep);
+    background-color: var(--ak-white);
+}
+
+.ak-accordion-btn:not(.collapsed) {
+    background-color: rgba(53, 194, 193, 0.12);
+    color: var(--ak-ocean-deep);
+    box-shadow: none;
+}
+
+.ak-accordion-btn:focus {
+    box-shadow: none;
+    border-color: transparent;
+}
+
+.ak-accordion-body {
+    color: var(--ak-ink-soft);
+    background-color: var(--ak-white);
+
+}
+
+/* ---------- Final CTA ---------- */
+.ak-final-frame {
+    width: 500px;
+    background-color: var(--ak-white);
+    border-radius: var(--ak-radius-lg);
+    padding: 1.5rem;
+    box-shadow: var(--ak-shadow);
+}
+
+.ak-final-price {
+
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--ak-ocean-deep);
+    margin-bottom: 1rem;
+}
+
+/* ---------- Footer ---------- */
+.ak-footer {
+    background-color: var(--ak-ocean-deep);
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.ak-footer-title {
+    color: var(--ak-white);
+    font-weight: 700;
+
+    margin-bottom: 1.2rem;
+}
+
+.ak-footer-disclaimer {
+    font-size: 1.4rem;
+    color: rgba(255, 255, 255,0.7);
+    margin: 0 auto;
+}
+
+.ak-footer-rule {
+    border-color: rgba(255, 255, 255, 0.15);
+    opacity: 1;
+    margin: 0;
+}
+
+.ak-footer-links {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.35rem 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.ak-footer-links a {
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.ak-footer-links a:hover {
+    color: gold;
+}
+
+.ak-footer-copy {
+    font-size: 1.3rem;
+}
+
+.ak-footer-brand {
+    color: var(--ak-white);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/* ---------- Scroll to top ---------- */
+.ak-scroll-top {
+    position: fixed;
+    bottom: 1.25rem;
+    right: 1.25rem;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background-color: var(--ak-aqua);
+    color: var(--ak-ocean-deep);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    box-shadow: 0 10px 22px -10px rgba(0, 0, 0, 0.4);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 991.98px) {
+    .ak-hero {
+        padding-top: 2.5rem;
+    }
+
+    .ak-h1 {
+        font-size: 2.05rem;
+    }
+
+    h2 {
+        font-size: 1.8rem !important;
+    }
+
+    h3 {
+        font-size: 1.4rem !important;
+    }
+
+    h4 {
+        font-size: 1.4rem;
+    }
+
+
+    .ak-guarantee-card {
+        padding: 2rem;
+    }
+
+    .ak-bonus-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .btncenter {
+        display: flex;
+        justify-content: center;
+    }
+
+    .ak-btn-ghost {
+        width: 100% !important;
+    }
+
+    .ak-btn-cta {
+        width: 100% !important;
+    }
+
+    .navbar-collapse {
+        text-align: center;
+    }
+
+    .checkout {
+        width: auto;
+    }
+
+    .ak-final-frame {
+        width: auto;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .ak-h1 {
+        font-size: 1.75rem;
+    }
+
+    .ak-bonus-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ak-hero-ring {
+        display: none;
+    }
+
+    .ak-footer-links {
+        flex-direction: column;
+        gap: 1px;
+        text-align: center;
+    }
+
+    .ak-footer-links li {
+        width: 100%;
+    }
+
+    .ak-footer-links a {
+        display: block;
+        padding: 3px 0;
+    }
+}
+
+.checkout {
+    width: 800px;
+}
+
+
+
+/* =====================================================
+   ClearVue+ v5 — additive components on top of the v4
+   "Alkaline Balance" design system (imports v4 tokens)
+   ===================================================== */
+
+@import url("ClearVue+-v4.css");
+
+/* ---------- Mechanism / 3-step cards ---------- */
+.ak-mech-card {
+    background-color: var(--ak-white);
+    border-radius: var(--ak-radius-lg);
+    padding: 2rem;
+    box-shadow: var(--ak-shadow);
+    position: relative;
+}
+
+.ak-mech-num {
+    display: inline-block;
+
+    font-weight: 800;
+    font-size: 1.6rem;
+    color: var(--ak-aqua-deep);
+    background-color: rgba(53, 194, 193, 0.12);
+    border-radius: 50%;
+    width: 52px;
+    height: 52px;
+    line-height: 52px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.ak-mech-title {
+
+    font-weight: 600;
+
+    color: var(--ak-ocean-deep);
+    margin-bottom: 0.7rem;
+}
+
+.ak-mech-text {
+    color: var(--ak-ink-soft);
+    font-size: 0.92rem;
+
+    margin: 0;
+}
+
+ul {
+    font-size: 1.2rem !important;
+}
+
+/* ---------- Pro tip banner ---------- */
+.ak-tip-card {
+    background-color: var(--ak-ocean-deep);
+    color: var(--ak-white);
+    border-radius: var(--ak-radius-md);
+    padding: 1.75rem 2rem;
+}
+
+.ak-tip-text {
+    color: rgba(255, 255, 255, 0.82);
+
+    font-size: 0.95rem;
+}
+
+/* ---------- Ingredient tag on cards ---------- */
+.ak-ing-tag {
+    display: inline-block;
+    color: var(--ak-coral);
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    letter-spacing: 0.06em;
+    margin-bottom: 0.5rem;
+}
+
+/* ---------- Difference callout ---------- */
+.ak-difference-card {
+    background-color: var(--ak-sand-panel);
+    border-left: 4px solid var(--ak-aqua);
+    border-radius: var(--ak-radius-sm);
+    padding: 1.5rem 1.75rem;
+}
+
+.ak-difference-title {
+
+    font-weight: 700;
+
+    color: var(--ak-ocean-deep);
+    margin-bottom: 0rem;
+}
+
+.ak-difference-text {
+    color: var(--ak-ink-soft);
+
+
+}
+
+/* ---------- Fit-check lists ---------- */
+.ak-fit-card {
+    background-color: var(--ak-white);
+    border-radius: var(--ak-radius-lg);
+    padding: 2rem;
+    box-shadow: var(--ak-shadow);
+}
+
+.ak-fit-title {
+
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-bottom: 1.2rem;
+}
+
+.ak-fit-title-yes {
+    color: var(--ak-ocean-deep);
+}
+
+.ak-fit-title-no {
+    color: var(--ak-coral);
+}
+
+.ak-fit-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: var(--ak-ink-soft);
+    font-size: 0.94rem;
+}
+
+.ak-fit-list li {
+    padding-left: 1.6rem;
+    position: relative;
+    margin-bottom: 0.85rem;
+
+}
+
+.ak-fit-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--ak-aqua-deep);
+    font-weight: 700;
+}
+
+.ak-fit-list-no li::before {
+    content: "✗";
+    color: var(--ak-coral);
+}
+
+/* ---------- Review note ---------- */
+.ak-review-note {
+    color: var(--ak-ink-soft);
+    font-size: 0.82rem;
+    font-style: italic;
+}
+
+/* ---------- Comparison table ---------- */
+.ak-compare-wrap {
+    background-color: var(--ak-white);
+    border-radius: var(--ak-radius-lg);
+    box-shadow: var(--ak-shadow);
+    overflow-x: auto;
+    padding: 0.5rem;
+}
+
+.ak-compare-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 620px;
+}
+
+.ak-compare-table thead th {
+
+    font-weight: 700;
+    color: var(--ak-white);
+    background-color: var(--ak-ocean-deep);
+    padding: 1rem 1.2rem;
+    text-align: left;
+    font-size: 0.92rem;
+}
+
+.ak-compare-table thead th:not(:first-child) {
+    text-align: center;
+}
+
+.ak-compare-table tbody td {
+    padding: 0.9rem 1.2rem;
+    border-bottom: 1px solid rgba(14, 59, 60, 0.08);
+    color: var(--ak-ink-soft);
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.ak-compare-table tbody td:first-child {
+    text-align: left;
+    color: var(--ak-ink);
+    font-weight: 600;
+}
+
+.ak-compare-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.ak-compare-table .ak-yes {
+    color: var(--ak-aqua-deep);
+    font-weight: 700;
+}
+
+.ak-compare-table .ak-no {
+    color: var(--ak-coral);
+    font-weight: 700;
+}
+
+/* ---------- Results timeline ---------- */
+.ak-timeline {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+}
+
+.ak-timeline-item {
+    background-color: var(--ak-sand-panel);
+    border-radius: var(--ak-radius-md);
+    padding: 1.5rem;
+    border-top: 3px solid var(--ak-aqua);
+}
+
+.ak-timeline-tag {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--ak-ocean-deep);
+    margin-bottom: 0rem;
+}
+
+.ak-timeline-text {
+    color: var(--ak-ink-soft);
+
+
+    margin: 0;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 991.98px) {
+    .ak-timeline {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 575.98px) {
+    .ak-timeline {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/* ---------- Standard / trust cards ---------- */
+.ss-standard-card {
+    background-color: white;
+    border-radius: var(--ss-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--ss-shadow);
+}
+
+.ss-standard-img {
+    padding: 1.25rem 1.25rem 0;
+    text-align: center;
+}
+
+.ss-standard-img img {
+    width: 75%;
+    display: block;
+    margin: 0 auto;
+}
+
+.ss-standard-body {
+    padding: 1.5rem;
+}
+
+.ss-badge {
+    display: inline-block;
+    border-radius: 999px;
+    padding: 0.35rem 0.9rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.6rem;
+}
+
+.ss-badge-a {
+    background-color: var(--ss-citron);
+    color: white;
+}
+
+.ss-badge-b {
+    background-color: var(--ss-citron);
+    color: white;
+}
+
+.ss-badge-c {
+    background-color: var(--ss-citron);
+    color: white;
+}
+
+.ss-badge-d {
+    background-color: var(--ss-citron);
+    color: white;
+}
+
+.ss-standard-title {
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: var(--ss-indigo-deep);
+    margin-bottom: 0.5rem;
+}
+
+.ss-standard-text {
+    color: var(--ss-ink-soft);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+
+
+
+
+.references-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 5px;
+}
+
+.reference-list {
+    margin: 0;
+    padding-left: 30px;
+    font-size: 18px;
+}
+
+.reference-list li {
+    padding-left: 3px;
+    margin-bottom: 7px;
+    font-size: 16px;
+    line-height: 1.42;
+    color: #111;
+}
+
+.reference-list li::marker {
+    font-size: 10px;
+}
+
+@media (max-width: 991px) {
+    .main-title {
+        margin-bottom: 30px;
+    }
+
+    .logos-row {
+        gap: 0px;
+    }
+
+    .logo-box {
+        height: 85px;
+    }
+
+    .references-grid {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .references-page {
+        padding: 20px 15px 40px;
+    }
+
+    .main-title {
+
+        margin-bottom: 30px;
+    }
+
+    .logos-row {
+        min-height: auto;
+    }
+
+    .logo-box {
+        height: 80px;
+        margin-bottom: 10px;
+    }
+
+    .references-grid {
+        display: block;
+        margin-top: 15px;
+    }
+
+    .reference-column+.reference-column {
+        margin-top: 15px;
+    }
+
+    .reference-list li {
+        font-size: 12px;
+        line-height: 1.5;
+        margin-bottom: 9px;
+    }
+
+    section.container.py-0.mt-3 ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    section.container.py-0.mt-3 .list-inline-item {
+        display: block;
+        margin: 0 !important;
+        padding: 7px 0;
+    }
+
+    section.container.py-0.mt-3 .list-inline-item a {
+        display: inline-block;
+
+    }
+}
+
+
+
+/* Bonus section */
+.cv-bonus-section {
+    position: relative;
+    background: linear-gradient(180deg, #f8fbfc 0%, #488461 100%);
+    overflow: hidden;
+}
+.cv-bonus-section::before {
+    content: "";
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    top: -220px;
+    left: -180px;
+    background: rgba(13, 124, 128, 0.06);
+    border-radius: 50%;
+    pointer-events: none;
+}
+.cv-bonus-section::after {
+    content: "";
+    position: absolute;
+    width: 360px;
+    height: 360px;
+    bottom: -180px;
+    right: -140px;
+    background: rgba(13, 124, 128, 0.05);
+    border-radius: 50%;
+    pointer-events: none;
+}
+.cv-bonus-header {
+    max-width: 850px;
+    position: relative;
+    z-index: 2;
+}
+.cv-bonus-eyebrow {
+    display: inline-block;
+    padding: 8px 18px;
+    border-radius: 50px;
+    background: rgba(13, 124, 128, 0.09);
+    color: #0d7c80;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.cv-bonus-title {
+    color: #111827;
+    font-size: clamp(32px, 4vw, 40px);
+    line-height: 1.1;
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+.cv-bonus-title span {
+    display: block;
+    color: #0d7c80;
+}
+.cv-bonus-intro {
+    max-width: 680px;
+    margin: 0 auto;
+    color: #667085;
+    font-size: 17px;
+    line-height: 1.7;
+}
+.cv-bonus-card {
+    position: relative;
+    background: #ffffff;
+    border: 1px solid #e5e9eb;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 18px 50px rgba(15, 35, 40, 0.08);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+.cv-bonus-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 25px 65px rgba(15, 35, 40, 0.13);
+}
+.cv-bonus-image-wrap {
+    position: relative;
+    min-height: 310px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 35px;
+    background: linear-gradient(145deg, #eef8f8 0%, #f8fbfb 100%);
+    border-bottom: 1px solid #e8eeee;
+}
+.cv-bonus-image {
+    height: 245px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cv-bonus-image img {
+    max-height: 245px;
+    width: auto;
+    object-fit: contain;
+   
+    transition: transform 0.35s ease;
+}
+.cv-bonus-card:hover .cv-bonus-image img {
+    transform: translateY(-5px) scale(1.02);
+}
+.cv-bonus-number {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    z-index: 2;
+    padding: 7px 13px;
+    border-radius: 30px;
+    background: #0d7c80;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+.cv-bonus-content {
+    padding: 30px 30px 32px;
+}
+.cv-bonus-tag {
+    display: inline-block;
+    color: #0d7c80;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+}
+.cv-bonus-content h3 {
+    color: #172126;
+    font-size: 24px;
+    line-height: 1.25;
+    font-weight: 800;
+    margin-bottom: 14px;
+}
+.cv-bonus-content p {
+    color: #667085;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+.cv-bonus-feature {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #344054;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.cv-bonus-feature span:first-child {
+    width: 21px;
+    height: 21px;
+    flex: 0 0 21px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #e8f6f5;
+    color: #0d7c80;
+    font-size: 12px;
+    font-weight: 900;
+}
+.cv-bonus-bottom {
+    position: relative;
+    z-index: 2;
+}
+.cv-bonus-offer {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 25px;
+    border: 1px solid #dcebea;
+    border-radius: 16px;
+    background: #ffffff;
+    box-shadow: 0 10px 30px rgba(15, 35, 40, 0.06);
+    text-align: left;
+}
+.cv-bonus-offer-icon {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #eaf7f6;
+    font-size: 21px;
+}
+.cv-bonus-offer strong {
+    display: block;
+    color: #172126;
+    font-size: 16px;
+    margin-bottom: 2px;
+}
+.cv-bonus-offer p {
+    color: #667085;
+    font-size: 13px;
+}
+@media (max-width: 767px) {
+    .cv-bonus-section {
+        padding-top: 45px !important;
+        padding-bottom: 45px !important;
+    }
+    .cv-bonus-title {
+        font-size: 34px;
+    }
+    .cv-bonus-intro {
+        font-size: 15px;
+    }
+    .cv-bonus-image-wrap {
+        min-height: 270px;
+        padding: 25px;
+    }
+    .cv-bonus-image {
+        height: 215px;
+    }
+    .cv-bonus-image img {
+        max-height: 215px;
+    }
+    .cv-bonus-content {
+        padding: 25px 22px 28px;
+    }
+    .cv-bonus-content h3 {
+        font-size: 21px;
+    }
+    .cv-bonus-offer {
+        width: 100%;
+        max-width: 450px;
+    }
+}

@@ -1,0 +1,1102 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PressureCalmX® | Advanced Blood Pressure Support — Calm Your Numbers. Help Your Heart.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&amp;family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+html { scroll-behavior: smooth; }
+*,*::before,*::after { box-sizing: border-box; margin:0; padding:0; }
+
+:root {
+  --navy:       #041220;
+  --navy-mid:   #071e33;
+  --navy-card:  #0a2540;
+  --blue-deep:  #0c3b6e;
+  --blue:       #1565c0;
+  --blue-bright:#2b87d3;
+  --blue-light: #4aa8e8;
+  --sky:        #e8f4ff;
+  --gold:       #e2231a;
+  --gold-soft:  #ff6f61;
+  --white:      #ffffff;
+  --off-white:  #f4f9ff;
+  --light-blue: #e0f0ff;
+  --gray-light: #b0c8e4;
+  --gray-mid:   #4a4e52;
+  --green:      #00c87a;
+  --red-soft:   #ff6b6b;
+  --font-head:  'Barlow Condensed', sans-serif;
+  --font-body:  'DM Sans', sans-serif;
+  --font-ui:    'Space Grotesk', sans-serif;
+}
+
+body { font-family:var(--font-body); background:var(--white); color:var(--navy); font-size:16px; line-height:1.65; overflow-x:hidden; }
+a { text-decoration:none; color:inherit; }
+img { max-width:100%; display:block; }
+
+/* URGENCY BAR */
+.urgency-bar {
+  background:linear-gradient(90deg, #8b0000, #c0392b, #8b0000);
+  text-align:center; padding:12px 20px;
+  font-family:var(--font-head); font-size:1rem; font-weight:800;
+  text-transform:uppercase; letter-spacing:1px; color:#fff;
+  animation:urgblink 2.5s ease-in-out infinite;
+}
+@keyframes urgblink { 0%,100%{opacity:1;} 50%{opacity:0.88;} }
+
+/* TOPBAR */
+.topbar {
+  background: linear-gradient(90deg, #041220 0%, #0c3b6e 45%, #041220 100%);
+  text-align:center; padding:11px 20px;
+  font-family:var(--font-ui); font-size:12.5px; font-weight:600;
+  letter-spacing:0.6px; color:var(--blue-light);
+  border-bottom: 1px solid rgba(43,135,211,0.25);
+}
+.topbar b { color:#a2cdef; }
+
+/* HERO */
+.hero {
+  background:
+    radial-gradient(ellipse at 10% 80%, rgba(43,135,211,0.14) 0%, transparent 50%),
+    radial-gradient(ellipse at 90% 20%, rgba(21,101,192,0.22) 0%, transparent 55%),
+    linear-gradient(160deg, #041220 0%, #071e33 50%, #04111e 100%);
+  padding:60px 40px 50px;
+  position:relative; overflow:hidden;
+}
+.wave-lines {
+  position:absolute; inset:0; pointer-events:none; overflow:hidden; opacity:0.07;
+}
+.wave-lines svg { width:100%; height:100%; }
+.hero-inner {
+  max-width:1180px; margin:0 auto;
+  display:grid; grid-template-columns:1fr 440px;
+  gap:60px; align-items:center; position:relative; z-index:2;
+}
+.hero-badge {
+  display:inline-flex; align-items:center; gap:8px;
+  background:rgba(43,135,211,0.14); border:1px solid rgba(43,135,211,0.4);
+  border-radius:4px; padding:7px 16px;
+  font-family:var(--font-ui); font-size:11px; font-weight:700; letter-spacing:2.5px;
+  text-transform:uppercase; color:var(--blue-light); margin-bottom:18px;
+}
+.hero h1 {
+  font-family:var(--font-head); font-size:clamp(2.8rem,5vw,4.9rem);
+  font-weight:900; line-height:1.0; color:#fff; margin-bottom:20px;
+  text-transform:uppercase; letter-spacing:-0.5px;
+}
+.hero h1 .hl { color:var(--blue-light); }
+.hero h1 .hg { color:var(--gold); }
+.hero-sub {
+  font-size:1.05rem; color:rgba(255,255,255,0.72); line-height:1.8;
+  max-width:520px; margin-bottom:28px;
+}
+.hero-sub strong { color:#fff; }
+.hero-stats { display:flex; gap:28px; margin-bottom:32px; flex-wrap:wrap; }
+.stat-item { text-align:center; }
+.stat-num { font-family:var(--font-head); font-size:2.4rem; font-weight:900; color:var(--blue-light); line-height:1; }
+.stat-label { font-size:0.7rem; color:rgba(255,255,255,0.45); text-transform:uppercase; letter-spacing:0.8px; margin-top:3px; }
+.stat-div { width:1px; background:rgba(43,135,211,0.2); align-self:stretch; }
+.hero-checks { display:flex; flex-direction:column; gap:10px; margin-bottom:34px; }
+.hchk { display:flex; align-items:center; gap:12px; font-size:0.97rem; color:rgba(255,255,255,0.88); font-weight:500; }
+.hchk-dot {
+  width:22px; height:22px; border-radius:50%;
+  background:linear-gradient(135deg, var(--blue), var(--blue-bright));
+  display:flex; align-items:center; justify-content:center;
+  flex-shrink:0; font-size:12px; color:#fff; font-weight:900;
+}
+
+/* BTN */
+.btn-buy {
+  display:inline-flex; align-items:center; gap:10px;
+  background:linear-gradient(135deg, var(--gold) 0%, #8b0000 100%);
+  color:#fff; padding:18px 44px; border-radius:6px;
+  font-family:var(--font-head); font-size:1.3rem; font-weight:900;
+  letter-spacing:1px; border:none; cursor:pointer; text-transform:uppercase;
+  transition:transform .2s, box-shadow .2s;
+  box-shadow: 0 8px 30px rgba(226,35,26,0.4);
+  animation:btnpulse 3s ease-in-out infinite;
+}
+@keyframes btnpulse {
+  0%,100% { box-shadow:0 8px 30px rgba(226,35,26,0.4); }
+  50%      { box-shadow:0 14px 50px rgba(139,0,0,0.6); }
+}
+.btn-buy:hover { transform:scale(1.04) translateY(-2px); color:#fff; }
+.btn-sub { display:block; margin-top:10px; font-size:0.78rem; color:rgba(255,255,255,0.35); }
+
+/* HERO VISUAL */
+.hero-visual { position:relative; display:flex; justify-content:center; align-items:center; }
+.glow-ring {
+  position:absolute; width:400px; height:400px; border-radius:50%;
+  background:radial-gradient(circle, rgba(43,135,211,0.18) 0%, rgba(21,101,192,0.1) 45%, transparent 75%);
+  animation:glowPulse 4s ease-in-out infinite;
+}
+
+.animation-01{
+            animation: pulse 3s infinite;
+        }
+
+        @keyframes pulse {
+            0%,
+            100% {
+                transform: scale(.9);
+            }
+
+            50% {
+                transform: scale(1);
+            }
+        }
+
+        @-webkit-keyframes pulse {
+            0%,
+            100% {
+                -webkit-transform: scale(.95);
+            }
+
+            50% {
+                -webkit-transform: scale(1);
+            }
+        }
+
+/* TRUST BAR */
+.trust-bar {
+  background:var(--navy-mid);
+  border-top:1px solid rgba(43,135,211,0.15);
+  border-bottom:1px solid rgba(43,135,211,0.15);
+  padding:14px 40px;
+}
+.trust-inner {
+  max-width:1100px; margin:0 auto;
+  display:flex; justify-content:center; align-items:center;
+  gap:32px; flex-wrap:wrap;
+}
+.ti { display:flex; align-items:center; gap:8px; font-size:12.5px; font-weight:600; color:var(--blue-light); white-space:nowrap; font-family:var(--font-ui); }
+.ti .ico { font-size:17px; }
+
+/* SCIENCE BAR */
+.sci-bar {
+  background:linear-gradient(90deg, var(--blue-deep), var(--blue), var(--blue-deep));
+  padding:20px 40px;
+}
+.sci-inner {
+  max-width:1000px; margin:0 auto;
+  display:flex; justify-content:space-between; flex-wrap:wrap;
+  gap:20px; align-items:center;
+}
+.sci-item { text-align:center; }
+.sci-num { font-family:var(--font-head); font-size:2rem; font-weight:900; color: #a2cdef; line-height:1; }
+.sci-label { font-size:0.72rem; color:rgba(255,255,255,0.65); text-transform:uppercase; letter-spacing:1px; margin-top:3px; font-family:var(--font-ui); }
+
+/* SECTIONS */
+.sec { padding:80px 40px; }
+.sec-inner { max-width:1100px; margin:0 auto; }
+.sec-eyebrow {
+  font-family:var(--font-ui); font-size:11.5px; font-weight:700;
+  letter-spacing:3px; text-transform:uppercase; color:var(--blue-bright);
+  margin-bottom:12px;
+}
+.sec-title {
+  font-family:var(--font-head); font-size:clamp(2rem,3.5vw,3rem);
+  font-weight:900; line-height:1.1; text-transform:uppercase;
+  color:var(--navy); margin-bottom:14px;
+}
+.sec-title span { color:var(--blue-bright); }
+.sec-sub { font-size:1rem; color:var(--gray-mid); max-width:640px; margin:0 auto 50px; text-align:center; line-height:1.8; }
+.blue-rule { width:60px; height:3px; background:linear-gradient(90deg,var(--blue-bright),var(--blue-light)); border:none; margin:14px auto 30px; border-radius:2px; }
+
+/* PROBLEM SEC */
+.problem-sec {
+  background:
+    radial-gradient(ellipse at 30% 50%, rgba(43,135,211,0.06) 0%, transparent 60%),
+    var(--navy-mid);
+  color:#fff;
+}
+.problem-sec .sec-title { color:#fff; }
+.problem-sec .sec-sub { color:rgba(255,255,255,0.5); }
+.problem-grid { display:grid; grid-template-columns:1fr 1fr; gap:28px; }
+.pbox { padding:32px; border-radius:8px; }
+.pbox.bad {
+  background:rgba(255,107,107,0.05);
+  border:1px solid rgba(255,107,107,0.2);
+}
+.pbox.good {
+  background:rgba(0,200,122,0.06);
+  border:1px solid rgba(0,200,122,0.25);
+}
+.pbox h4 {
+  font-family:var(--font-head); font-size:1.2rem; font-weight:800;
+  text-transform:uppercase; letter-spacing:0.5px; margin-bottom:18px;
+  padding-bottom:12px;
+}
+.pbox.bad h4 { color:var(--red-soft); border-bottom:1px solid rgba(255,107,107,0.2); }
+.pbox.good h4 { color:var(--green); border-bottom:1px solid rgba(0,200,122,0.2); }
+.pbox ul { list-style:none; display:flex; flex-direction:column; gap:11px; }
+.pbox ul li {
+  font-size:0.94rem; color:rgba(255,255,255,0.82); padding-left:22px;
+  position:relative; line-height:1.4;
+}
+.pbox.bad ul li::before { content:'✗'; position:absolute; left:0; color:var(--red-soft); font-weight:700; }
+.pbox.good ul li::before { content:'✓'; position:absolute; left:0; color:var(--green); font-weight:700; }
+
+/* HOW IT WORKS */
+.steps-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:28px; margin-bottom:50px; }
+.step-card {
+  background:#fff; border:1px solid #d0e8ff;
+  border-radius:10px; padding:32px 26px; text-align:center;
+  box-shadow:0 4px 24px rgba(21,101,192,0.07);
+  transition:transform .2s, box-shadow .2s;
+}
+.step-card:hover { transform:translateY(-6px); box-shadow:0 12px 40px rgba(21,101,192,0.13); }
+.step-num {
+  width:54px; height:54px; border-radius:50%;
+  background:linear-gradient(135deg, var(--blue), var(--blue-bright));
+  color:#fff; font-family:var(--font-head); font-size:1.8rem; font-weight:900;
+  display:flex; align-items:center; justify-content:center; margin:0 auto 18px;
+}
+.step-card h4 { font-family:var(--font-head); font-size:1.3rem; font-weight:800; text-transform:uppercase; letter-spacing:0.3px; color:var(--navy); margin-bottom:10px; }
+.step-card p { font-size:0.93rem; color:var(--gray-mid); line-height:1.7; }
+
+/* INGREDIENTS */
+.ingr-grid {
+  display:grid; grid-template-columns:repeat(auto-fit, minmax(310px,1fr));
+  gap:22px;
+}
+.ingr-card {
+  display:flex; align-items:flex-start; gap:18px;
+  background:#fff; border:1px solid #d0e8ff;
+  border-radius:10px; padding:22px;
+  box-shadow:0 3px 16px rgba(21,101,192,0.06);
+  transition:transform .2s;
+}
+.ingr-card:hover { transform:translateY(-4px); }
+.ingr-img {
+  width:80px; height:80px; border-radius:8px;
+  object-fit:cover; flex-shrink:0;
+  border:2px solid rgba(43,135,211,0.25);
+}
+.ingr-info h5 {
+  font-family:var(--font-head); font-size:1.1rem; font-weight:800;
+  text-transform:uppercase; letter-spacing:0.3px; color:var(--navy); margin-bottom:5px;
+}
+.ingr-dose {
+  display:inline-block; background:rgba(43,135,211,0.1);
+  color:var(--blue-bright); font-family:var(--font-ui); font-size:10.5px;
+  font-weight:700; padding:2px 10px; border-radius:3px; margin-bottom:8px;
+  letter-spacing:1px;
+}
+.ingr-info p { font-size:0.88rem; color:var(--gray-mid); line-height:1.6; }
+
+/* TESTIMONIALS */
+.test-sec { background:var(--navy-mid); }
+.test-sec .sec-title { color:#fff; }
+.testi-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+.tcard {
+  background:var(--navy-card); border:1px solid rgba(43,135,211,0.18);
+  border-radius:10px; padding:28px;
+  position:relative; transition:transform .2s;
+}
+.tcard:hover { transform:translateY(-5px); }
+.tcard::before {
+  content:'"'; font-size:5rem; line-height:1;
+  font-family:Georgia,serif; color:rgba(43,135,211,0.12);
+  position:absolute; top:10px; left:20px;
+}
+.tcard-stars { color:var(--gold); font-size:1rem; margin-bottom:12px; letter-spacing:2px; }
+.tcard-text { font-size:0.94rem; color:rgba(255,255,255,0.8); line-height:1.75; margin-bottom:18px; font-style:italic; position:relative; z-index:1; }
+.tcard-author { display:flex; align-items:center; gap:12px; }
+.tcard-avatar {
+  width:44px; height:44px; border-radius:50%;
+  background:linear-gradient(135deg, var(--blue), var(--blue-bright));
+  display:flex; align-items:center; justify-content:center;
+  font-family:var(--font-head); font-size:1.1rem; font-weight:900; color:#fff;
+  flex-shrink:0;
+}
+.tcard-name { font-family:var(--font-ui); font-weight:700; color:#fff; font-size:0.9rem; }
+.tcard-loc { font-size:0.78rem; color:var(--gray-mid); margin-top:2px; }
+.tcard-verified { font-size:0.75rem; color:var(--green); margin-top:3px; font-weight:600; }
+
+/* ORDER SECTION */
+.order-sec {
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(43,135,211,0.09) 0%, transparent 60%),
+    var(--navy-mid);
+}
+.order-sec .sec-title { color:#fff; }
+.pkg-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:22px; align-items:stretch; }
+
+/* Pricing cards */
+.pricing-card {
+  border-radius:12px; padding:30px 24px; text-align:center;
+  display:flex; flex-direction:column;
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  background:var(--navy-card);
+  border:1.5px solid rgba(43,135,211,0.18);
+}
+.pricing-card:hover {
+  transform:translateY(-8px);
+  box-shadow:0 20px 50px rgba(0,0,0,0.3);
+}
+.pricing-card.best {
+  border:2px solid var(--gold);
+  background:linear-gradient(180deg, rgba(226,35,26,0.06) 0%, var(--navy-card) 100%);
+  position:relative; transform:scale(1.03);
+}
+.pricing-card.best:hover { transform:scale(1.03) translateY(-8px); }
+.best-badge {
+  position:absolute; top:-16px; left:50%; transform:translateX(-50%);
+  background:linear-gradient(90deg, var(--gold), #8b0000);
+  color:#fff; font-family:var(--font-head); font-size:0.85rem;
+  font-weight:900; text-transform:uppercase; letter-spacing:1.5px;
+  padding:6px 24px; border-radius:20px; white-space:nowrap;
+  box-shadow:0 4px 16px rgba(226,35,26,0.4);
+}
+.pcard-label { font-family:var(--font-head); font-size:1.5rem; font-weight:900; color:#fff; text-transform:uppercase; margin-bottom:4px; }
+.pcard-supply { font-size:0.8rem; color:var(--gray-mid); font-family:var(--font-ui); margin-bottom:16px; }
+.pcard-img-wrap { height:200px; display:flex; align-items:center; justify-content:center; margin-bottom:16px; }
+.pcard-img-wrap img { max-width:260px; max-height:200px; filter:drop-shadow(0 10px 30px rgba(43,135,211,0.3)); }
+.pcard-price-row { display:flex; align-items:flex-end; justify-content:center; gap:4px; margin-bottom:10px; }
+.p-dollar { font-family:var(--font-head); font-size:1.5rem; font-weight:900; color:var(--blue-light); line-height:1.8; }
+.p-amount { font-family:var(--font-head); font-size:4rem; font-weight:900; color:var(--blue-light); line-height:1; }
+.p-per { font-size:0.75rem; color:var(--gray-mid); text-align:left; line-height:1.4; padding-bottom:8px; font-family:var(--font-ui); }
+.pcard-savings { color:#00e87a; font-weight:700; font-size:0.95rem; margin-bottom:18px; font-family:var(--font-ui); }
+.pricing-card-btn {
+  display:inline-block;
+  background:linear-gradient(135deg, var(--gold), #8b0000);
+  color:#fff;
+  font-family:var(--font-head);
+  font-weight:900;
+  font-size:1.15rem;
+  letter-spacing:1px;
+  padding:15px 30px;
+  border-radius:6px;
+  text-decoration:none;
+  text-align:center;
+  cursor:pointer;
+  border:none;
+  text-transform:uppercase;
+  transition:transform 0.25s, box-shadow 0.25s;
+  box-shadow:0 6px 20px rgba(226,35,26,0.35);
+  width:100%;
+  animation:btnpulse 3s ease-in-out infinite;
+}
+.pricing-card-btn:hover {
+  transform:scale(1.04);
+  box-shadow:0 10px 30px rgba(139,0,0,0.5);
+  color:#fff;
+}
+.pcard-guarantee { font-size:0.8rem; color:var(--gray-mid); margin:14px 0 12px; font-family:var(--font-ui); }
+.pcard-cards { max-width:140px; margin:0 auto 12px; opacity:0.7; }
+.pcard-total { font-family:var(--font-ui); font-size:0.95rem; color:rgba(255,255,255,0.6); margin-bottom:6px; }
+.pcard-total strong { color:var(--blue-light); font-size:1.1rem; }
+.pcard-total s { color:var(--gray-mid); }
+.pcard-ship { font-size:0.8rem; font-weight:700; margin-bottom:0; font-family:var(--font-ui); }
+.pcard-ship.paid { color:var(--gray-mid); }
+.pcard-ship.free { color:var(--green); }
+
+/* GUARANTEE */
+.guarantee-box {
+  background:#fff;
+  border:2px solid #d0e8ff;
+  border-radius:12px;
+  padding:50px 60px;
+  text-align:center;
+  max-width:780px;
+  margin:0 auto;
+  box-shadow:0 6px 40px rgba(21,101,192,0.07);
+}
+.guarantee-box .shield {display: flex; justify-content: center; align-items: center;}
+.shield>img {max-width: 250px;}
+.guarantee-box h2 { font-family:var(--font-head); font-size:2.5rem; font-weight:900; text-transform:uppercase; color:var(--navy); margin-bottom:16px; }
+.guarantee-box h2 span { color:var(--blue-bright); }
+.guarantee-box p { font-size:1rem; color:var(--gray-mid); line-height:1.85; margin-bottom:16px; }
+
+/* FAQ */
+.faq-wrap { max-width:800px; margin:0 auto; display:flex; flex-direction:column; gap:16px; text-align:left; }
+.faq-item {
+  background:#fff; border:1px solid #d0e8ff;
+  border-radius:8px; padding:24px 28px;
+  box-shadow:0 2px 12px rgba(21,101,192,0.05);
+}
+.faq-q { font-family:var(--font-ui); font-weight:700; font-size:1rem; color:var(--navy); margin-bottom:10px; }
+.faq-a { font-size:0.93rem; color:var(--gray-mid); line-height:1.75; }
+
+/* FINAL CTA */
+.final-cta {
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(43,135,211,0.15) 0%, transparent 65%),
+    linear-gradient(160deg, #041220 0%, #071e33 60%, #04111e 100%);
+  padding:50px 40px;
+  text-align:center; color:#fff;
+}
+.final-cta h2 {
+  font-family:var(--font-head); font-size:clamp(2.2rem,4vw,3.6rem);
+  font-weight:900; text-transform:uppercase; margin-bottom:20px;
+}
+.final-cta h2 span { color:var(--blue-light); }
+.final-cta p { font-size:1rem; color:rgba(255,255,255,0.55); max-width:720px; margin:0 auto 36px; line-height:1.8; }
+
+/* INGREDIENT HERO IMAGE */
+.ingr-hero {
+  background: var(--off-white);
+  padding: 70px 40px;
+}
+.ingr-hero-inner {
+  max-width: 1100px; margin: 0 auto; display: grid;
+  grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;
+}
+.ingr-hero-text h2 {
+  font-family: var(--font-head); font-size: clamp(2rem,3vw,2.8rem); font-weight:900;
+  text-transform:uppercase; color: var(--navy); margin-bottom:16px; line-height:1.1;
+}
+.ingr-hero-text h2 span { color:var(--blue-bright); }
+.ingr-hero-text p { font-size:1rem; color:var(--gray-mid); line-height:1.8; margin-bottom:16px; }
+
+.arte{
+    max-width: 480px;
+}
+
+/* RESPONSIVE */
+@media (max-width:900px) {
+  .hero-inner { grid-template-columns:1fr; }
+  .hero-visual { display:none; }
+  .problem-grid { grid-template-columns:1fr; }
+  .steps-grid { grid-template-columns:1fr; }
+  .testi-grid { grid-template-columns:1fr; }
+  .pkg-grid { grid-template-columns:1fr; }
+  .pricing-card.best { transform:scale(1); }
+  .ingr-hero-inner { grid-template-columns:1fr; }
+  .guarantee-box { padding:36px 24px; }
+  .hero { padding:40px 20px 36px; }
+  .sec { padding:60px 20px; }
+}
+
+@media (max-width:580px) {
+  .trust-inner { flex-direction:column; gap:14px; }
+  .sci-inner { flex-direction:column; gap:16px; }
+  .btn-buy { font-size:1rem; padding:16px 28px; }
+  .arte{max-width: 300px;}
+}
+
+/* CARDS PAYMENT IMG */
+.cards-img { max-width:160px; margin:0 auto 12px; }
+
+.pricing-card {
+            transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 50px #38393933;
+        }
+
+        .pricing-card-btn {
+            display: inline-block;
+            background: #f9c016;
+            color: #0f0f0f !important;
+            font-family: 'Inter', 'Barlow', sans-serif;
+            font-weight: 800;
+            font-size: 20px;
+            letter-spacing: 1px;
+            padding: 16px 60px;
+            border-radius: 50px;
+            text-decoration: none !important;
+            text-align: center;
+            cursor: pointer;
+            border: none;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+                box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+                background 0.3s ease;
+        }
+
+        .pricing-card-btn:hover {
+            transform: scale(1.06);
+            box-shadow: 0 8px 28px rgba(186, 168, 10, 0.4);
+            background: #f9c016;
+            color: #0f0f0f !important;
+        }
+
+        .pricing-card-btn:active {
+            transform: scale(0.97);
+            box-shadow: 0 2px 8px rgba(186, 168, 10, 0.4);
+        }
+
+        .pricing-card-btn::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 60%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.25), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .pricing-card-btn:hover::after {
+            left: 120%;
+        }
+
+        .card-bv {
+            background: radial-gradient(#497b9e, #032238);
+      color: #f0f0f0;
+      border: #032238;
+        }
+
+        .bg-01{
+          background-color: white;
+        }
+</style>
+
+<script type="text/javascript" defer="" src="js/track.js"></script><script>var mysrc = "https://tracking.buygoods.com/track/?a=13135&firstcookie=0"+"&tracking_redirect=&referrer="+encodeURIComponent(document.referrer)+"&sessid2="+ReadCookie('sessid2')+"&product=pre2,pre3,pre6&vid1=&vid2=&vid3=&caller_url="+encodeURIComponent(window.location.href); if(typeof add_to_cart !== 'undefined') { mysrc = mysrc+'&add_to_cart='+add_to_cart; } var newScript = document.createElement('script'); newScript.type = 'text/javascript'; newScript.defer = true; newScript.src = mysrc; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(newScript, s); function ReadCookie(name){name += '='; var parts = document.cookie.split(/;\s*/);for (var i = 0; i < parts.length; i++) {var part = parts[i]; if (part.indexOf(name) == 0) return part.substring(name.length)} return '';}</script>
+
+<script type="text/javascript">setTimeout(function () {var i = document.createElement("iframe"),oid = new URLSearchParams(window.location.search);i.async = true;i.style="display:none";i.setAttribute("src", "https://buygoods.com/affiliates/go/conversion/iframe/bg?a=13135&t=97dc08777742d484343d8c5474b5b3f3&s="+ReadCookie('sessid2'));document.body.appendChild(i);}, 1000);</script>
+</head>
+<body>
+
+<!-- URGENCY BAR -->
+<div class="urgency-bar">
+  ⚠️ LIMITED STOCK — Only 214 Units Remaining. Orders Placed Today Ship Within 24 Hours.
+</div>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  🔒 Secure Checkout &nbsp;|&nbsp; <b>FREE US SHIPPING</b> on 3 &amp; 6 Bottle Orders &nbsp;|&nbsp; <b>60-DAY</b> Money-Back Guarantee &nbsp;|&nbsp; Manufactured in USA — Aurora, CO · GMP Certified
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wave-lines">
+    <svg viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice">
+      <g stroke="rgba(43,135,211,1)" stroke-width="1" fill="none" opacity="1">
+        <path d="M0,180 Q200,120 400,180 T800,180 T1200,180"></path>
+        <path d="M0,300 Q200,240 400,300 T800,300 T1200,300"></path>
+        <path d="M0,420 Q200,360 400,420 T800,420 T1200,420"></path>
+        <path d="M0,80 Q300,40 600,80 T1200,80"></path>
+        <path d="M0,520 Q300,480 600,520 T1200,520"></path>
+      </g>
+    </svg>
+  </div>
+  <div class="hero-inner">
+    <div>
+      <div class="hero-badge">🛡️ Advanced Blood Pressure Support Formula</div>
+      <h1><span class="hl">Calm Your Pressure.</span><br>Support Your <span class="hg">Heart.</span></h1>
+      <p class="hero-sub">
+        Over 70 million American adults over 45 quietly worry about their blood pressure numbers — the headaches, the racing heart, the fear at every doctor's visit. 
+        <strong>PressureCalmX® delivers a science-backed blend of heart-healthy botanicals</strong> that supports blood pressure already within a normal range — so you can feel calm, steady, and in control again.
+      </p>
+      <div class="hero-stats">
+        <div class="stat-div"></div>
+        <div class="stat-item">
+          <div class="stat-num">Natural</div>
+          <div class="stat-label">Key Ingredients</div>
+        </div>
+        <div class="stat-div"></div>
+        <div class="stat-item">
+          <div class="stat-num">60-Day</div>
+          <div class="stat-label">Money-Back Guarantee</div>
+        </div>
+        <div class="stat-div"></div>
+      </div>
+      <div class="hero-checks">
+        <div class="hchk"><div class="hchk-dot">✓</div> Supports healthy blood pressure already within normal range</div>
+        <div class="hchk"><div class="hchk-dot">✓</div> Promotes healthy circulation and blood flow</div>
+        <div class="hchk"><div class="hchk-dot">✓</div> Supports overall heart and cardiovascular health</div>
+        <div class="hchk"><div class="hchk-dot">✓</div> natural, non-GMO formula</div>
+      </div>
+      <a href="#order" class="btn-buy">
+        <svg width="17" height="17" fill="currentColor" viewBox="0 0 576 512"><path d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z"></path></svg>
+        Order PressureCalmX® Now
+      </a>
+    </div>
+    <div class="hero-visual animation-01">
+      <div class="glow-ring"></div>
+      <img src="images/art-01.png" alt="PressureCalmX Bottle">
+    </div>
+  </div>
+</section>
+
+<!-- SCIENCE BAR -->
+<div class="sci-bar">
+  <div class="sci-inner">
+    <div class="sci-item"><div class="sci-num">620mg</div><div class="sci-label">Proprietary Heart Blend</div></div>
+    <div class="sci-item"><div class="sci-num">8</div><div class="sci-label">Heart-Healthy Plant Compounds</div></div>
+    <div class="sci-item"><div class="sci-num">294%</div><div class="sci-label">Vitamin B6 Daily Value</div></div>
+    <div class="sci-item"><div class="sci-num">4167%</div><div class="sci-label">Vitamin B12 Daily Value</div></div>
+  </div>
+</div>
+
+<!-- PROBLEM SECTION -->
+<section class="sec problem-sec">
+  <div class="sec-inner" style="text-align:center;">
+    <div class="sec-eyebrow" style="color:var(--blue-light);">The Blood Pressure Problem Affecting Adults 45+</div>
+    <h2 class="sec-title" style="color:#fff;">Do Any of These <span style="color:var(--blue-light)">Sound Familiar?</span></h2>
+    <div class="blue-rule"></div>
+    <p class="sec-sub">More than 70 million American adults silently deal with these exact struggles — and most are told to "just watch the salt" and "come back in three months." It doesn't have to be this way.</p>
+    <div class="problem-grid">
+      <div class="pbox bad">
+        <h4>😔 Without PressureCalmX®</h4>
+        <ul>
+          <li>That sinking feeling when the cuff reading comes back high — again</li>
+          <li>Headaches, dizziness, or a "foggy," disconnected feeling out of nowhere</li>
+          <li>Your heart pounding or racing after simple, everyday tasks</li>
+          <li>Dreading the doctor's office and the blood pressure check that comes with it</li>
+          <li>Watching friends deal with heart scares and wondering, "Am I next?"</li>
+          <li>Feeling tired, short of breath, or winded climbing a simple flight of stairs</li>
+          <li>Cutting salt, walking daily, doing "everything right" — and numbers still won't budge</li>
+          <li>Quietly avoiding the topic with your spouse and kids because it scares you</li>
+        </ul>
+      </div>
+      <div class="pbox good">
+        <h4>✨ With PressureCalmX®</h4>
+        <ul>
+          <li>Calm, steady numbers you feel good about sharing with your doctor</li>
+          <li>A clearer head and steadier, more energized days</li>
+          <li>A heart that feels calm and strong — not racing for no reason</li>
+          <li>Confidence walking into every check-up instead of dreading it</li>
+          <li>Feeling in control of your health, instead of controlled by fear</li>
+          <li>More stamina for walks, grandkids, and the things you love</li>
+          <li>A formula that works with your healthy lifestyle, not against it</li>
+          <li>Real peace of mind — for you, and for the people who love you</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INGREDIENT HERO IMAGE -->
+<div class="ingr-hero">
+  <div class="ingr-hero-inner">
+    <img class="animation-01 arte" src="images/art-01.png" alt="PressureCalmX Bottle">
+    <div class="ingr-hero-text">
+      <div class="sec-eyebrow">Nature's Most Trusted Heart &amp; Circulation Defenders</div>
+      <h2>A Formula <span>Backed by Nature</span> and Precision Science</h2>
+      <p>PressureCalmX® combines time-tested heart-healthy botanicals — including Hawthorn Leaf &amp; Flower, Garlic Bulb, Hibiscus Flower, and Olive Leaf — with Buchu, Uva Ursi, Juniper Berry, and Green Tea, all inside a 620mg Proprietary Blend, plus a full spectrum of B-Vitamins and Vitamin C.</p>
+      <p>Every ingredient was selected for its specific role in supporting healthy blood pressure already within a normal range, healthy circulation, and the body's natural cardiovascular balance. This isn't a one-ingredient product — it's a complete, synergistic system.</p>
+      <a href="#order" class="btn-buy" style="font-size:1.1rem; padding:16px 36px;">Get PressureCalmX® Now →</a>
+    </div>
+  </div>
+</div>
+
+<!-- INGREDIENTS -->
+<section class="sec" style="background:#fff;">
+  <div class="sec-inner" style="text-align:center;">
+    <div class="sec-eyebrow">Inside Every Capsule</div>
+    <h2 class="sec-title">Natural Ingredients <br> <span>One Complete Formula</span></h2>
+    <div class="blue-rule"></div>
+    <p class="sec-sub">Every ingredient in PressureCalmX® is sourced for purity, carefully selected, and included for its unique role in supporting healthy blood pressure already within a normal range, healthy circulation, and overall cardiovascular wellness.</p>
+
+    <div class="ingr-grid">
+
+  <div class="ingr-card">
+    <img class="ingr-img" src="hawthorn.jfif" alt="Hawthorn Leaf &amp; Flower">
+    <div class="ingr-info">
+      <h5>Hawthorn Leaf &amp; Flower</h5>
+      <span class="ingr-dose">620mg Proprietary Blend</span>
+      <p>Hawthorn is rich in naturally occurring flavonoids that help support healthy blood vessel function, healthy circulation, and blood pressure already within a normal range. It has been traditionally used for centuries to promote overall cardiovascular wellness.</p>
+    </div>
+  </div>
+
+  <div class="ingr-card">
+    <img class="ingr-img" src="garlic.jfif" alt="Garlic Bulb">
+    <div class="ingr-info">
+      <h5>Garlic Bulb</h5>
+      <span class="ingr-dose">620mg Proprietary Blend</span>
+      <p>Garlic contains naturally occurring sulfur compounds and antioxidants that help support healthy circulation and overall heart health. It is one of the most widely studied botanical ingredients for cardiovascular wellness.</p>
+    </div>
+  </div>
+
+  <div class="ingr-card">
+    <img class="ingr-img" src="olive.jfif" alt="Olive Leaf">
+    <div class="ingr-info">
+      <h5>Olive Leaf</h5>
+      <span class="ingr-dose">620mg Proprietary Blend</span>
+      <p>Olive Leaf provides natural polyphenols, including oleuropein, that help support healthy circulation, healthy blood vessel function, and antioxidant protection for the cardiovascular system.</p>
+    </div>
+  </div>
+
+  <div class="ingr-card">
+    <img class="ingr-img" src="buchu.jfif" alt="Buchu Leaf">
+    <div class="ingr-info">
+      <h5>Buchu Leaf</h5>
+      <span class="ingr-dose">620mg Proprietary Blend</span>
+      <p>Buchu has traditionally been used to support the body's natural fluid balance and overall wellness. It complements the botanical blend by promoting healthy circulatory function.</p>
+    </div>
+  </div>
+
+  <div class="ingr-card">
+    <img class="ingr-img" src="uva.jfif" alt="Uva Ursi Leaf">
+    <div class="ingr-info">
+      <h5>Uva Ursi Leaf</h5>
+      <span class="ingr-dose">620mg Proprietary Blend</span>
+      <p>Uva Ursi provides naturally occurring plant compounds that complement the complete herbal formula, helping support overall wellness while working alongside the other carefully selected botanicals.</p>
+    </div>
+  </div>
+
+  <div class="ingr-card">
+    <img class="ingr-img" src="juniper.jfif" alt="Juniper Berry">
+    <div class="ingr-info">
+      <h5>Juniper Berry</h5>
+      <span class="ingr-dose">620mg Proprietary Blend</span>
+      <p>Juniper Berry is a natural source of antioxidant compounds that help support healthy circulation and complement the cardiovascular-focused botanical blend for everyday wellness.</p>
+    </div>
+  </div>
+
+</div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="sec test-sec">
+  <div class="sec-inner" style="text-align:center;">
+    <div class="sec-eyebrow" style="color:var(--blue-light);">Real Customers. Real Experiences.</div>
+    <h2 class="sec-title" style="color:#fff;">What Our Customers <span style="color:var(--blue-light)">Are Saying</span></h2>
+    <div class="blue-rule"></div>
+    <p class="sec-sub" style="color:rgba(255,255,255,0.45);">Thousands of Americans have made PressureCalmX® part of their daily wellness routine. Here are some of their experiences.</p>
+
+    <div class="testi-grid">
+
+      <div class="tcard">
+        <div class="tcard-stars">★★★★★</div>
+        <p class="tcard-text">At my last checkup my doctor encouraged me to focus more on my heart health. I cleaned up my diet, started walking every morning, and added PressureCalmX® to my routine. A few months later I felt more confident, had more energy, and my follow-up appointment went much better than I expected. I'm staying on it.</p>
+        <div class="tcard-author">
+          <div class="tcard-avatar">RH</div>
+          <div>
+            <div class="tcard-name">Robert H.</div>
+            <div class="tcard-loc">Phoenix, AZ · Age 64</div>
+            <div class="tcard-verified">✔ Verified Purchase · 6-Bottle Kit</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tcard">
+        <div class="tcard-stars">★★★★★</div>
+        <p class="tcard-text">I spent years trying different supplements without finding one that felt complete. PressureCalmX® has everything I was looking for in one formula. I feel more confident knowing I'm giving my heart and circulation the daily support they deserve.</p>
+        <div class="tcard-author">
+          <div class="tcard-avatar">DM</div>
+          <div>
+            <div class="tcard-name">David M.</div>
+            <div class="tcard-loc">Chicago, IL · Age 59</div>
+            <div class="tcard-verified">✔ Verified Purchase · 3-Bottle Kit</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tcard">
+        <div class="tcard-stars">★★★★★</div>
+        <p class="tcard-text">What convinced me was the ingredient list. Hawthorn, Garlic, Hibiscus, Olive Leaf, Green Tea... these are some of the most respected botanical ingredients for cardiovascular wellness. I've been taking PressureCalmX® every day for over three months and couldn't be happier with my decision.</p>
+        <div class="tcard-author">
+          <div class="tcard-avatar">JK</div>
+          <div>
+            <div class="tcard-name">James K.</div>
+            <div class="tcard-loc">Houston, TX · Age 67</div>
+            <div class="tcard-verified">✔ Verified Purchase · 6-Bottle Kit</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tcard">
+        <div class="tcard-stars">★★★★★</div>
+        <p class="tcard-text">I'm in my seventies now, and taking care of my heart has become a top priority. PressureCalmX® fits perfectly into my daily routine. It's easy to take, made with natural ingredients, and gives me peace of mind knowing I'm supporting my cardiovascular health every day.</p>
+        <div class="tcard-author">
+          <div class="tcard-avatar">WB</div>
+          <div>
+            <div class="tcard-name">Walter B.</div>
+            <div class="tcard-loc">Atlanta, GA · Age 71</div>
+            <div class="tcard-verified">✔ Verified Purchase · 3-Bottle Kit</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tcard">
+        <div class="tcard-stars">★★★★★</div>
+        <p class="tcard-text">I appreciate that this formula doesn't rely on just one ingredient. The combination of premium botanicals plus B Vitamins and Vitamin C makes it feel like a complete cardiovascular support supplement. I've already reordered my second 6-bottle package.</p>
+        <div class="tcard-author">
+          <div class="tcard-avatar">TC</div>
+          <div>
+            <div class="tcard-name">Thomas C.</div>
+            <div class="tcard-loc">Denver, CO · Age 55</div>
+            <div class="tcard-verified">✔ Verified Purchase · 6-Bottle Kit</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tcard">
+        <div class="tcard-stars">★★★★★</div>
+        <p class="tcard-text">I bought PressureCalmX® for my husband because we both wanted to be more proactive about our health. We've started eating better, walking together, and he's been taking PressureCalmX® every day. Seeing him feel more energetic and committed to his heart health has been wonderful.</p>
+        <div class="tcard-author">
+          <div class="tcard-avatar">LR</div>
+          <div>
+            <div class="tcard-name">Linda R.</div>
+            <div class="tcard-loc">Seattle, WA · Age 61</div>
+            <div class="tcard-verified">✔ Verified Purchase · 6-Bottle Kit</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ORDER SECTION -->
+<section class="sec order-sec" id="order">
+  <div class="sec-inner" style="text-align:center;">
+    <div class="sec-eyebrow" style="color:var(--gold);">Choose Your Supply</div>
+    <h2 class="sec-title" style="color:#fff;">Select Your <span style="color:var(--blue-light)">PressureCalmX® Package</span></h2>
+    <div class="blue-rule"></div>
+    <p class="sec-sub" style="color:rgba(255,255,255,0.45);">Blood pressure support supplements work best with 90–180 days of consistent use. Choose the package that fits your goals and save the most per bottle.</p>
+
+    <div class="row">
+                <div class="col-12 col-md-4 mb-4 mb-md-0 order-3 order-md-1">
+                    <div class="theme-border-radius border border-2 border-gray text-center p-4 pricing-card bg-01">
+                        <h3 class="mb-0 fw-bold">Try Two</h3>
+                        <p class="small mb-0">30 Day Supply, 2 Bottles</p>
+                        <div class="col-9 mx-auto py-3">
+                            <div style="height: 200px; display: flex; align-items: center; justify-content: center;">
+                                <img src="images/2b.png" alt="2b" style="max-width: 300px;">
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <h4 class="display-2 fw-bold">$89</h4>
+                            <div class="ms-2 pb-2 small">
+                                <span class="d-block text-start">Per</span>
+                                <span class="d-block text-start">Bottle</span>
+                            </div>
+                        </div>
+                        <p style="color: #11bc27;" class="fw-bold mb-2">YOU SAVE $180</p>
+                        <div class="col-12 text-center mb-4">
+                            <a id="switchLink-2b" href="order.html" target="">
+                                <div class="pricing-card-btn">BUY NOW</div>
+                            </a>
+                        </div>
+                        <p class="small mb-3">60 Days Money Back Guarantee</p>
+                        <div class="col-7 mx-auto mb-3">
+                            <picture>
+                                <img src="images/cards.png" alt="Card" class="img-fluid">
+                            </picture>
+                        </div>
+                        <p class="mb-1">TOTAL: <span class="text-decoration-line-through">$358</span> <span class="fw-bold">$178</span></p>
+                        <p class="fw-bold mb-0">+ SHIPPING</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4 mb-md-0 order-1 order-md-2">
+                    <div class="theme-border-radius border-primary-new text-center p-4 card-bv pricing-card">
+                        <h3 class="mb-0 fw-bold">Recommended For You</h3>
+                        <p class="small mb-0">180 Day Supply, 6 Bottles</p>
+                        <div class="col-9 mx-auto py-3">
+                            <div style="height: 200px; display: flex; align-items: center; justify-content: center;">
+                                <img src="images/6b.png" alt="6b" style="max-width: 300px;">
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <h4 class="display-2 fw-bold">$49</h4>
+                            <div class="ms-2 pb-2 small">
+                                <span class="d-block text-start">Per</span>
+                                <span class="d-block text-start">Bottle</span>
+                            </div>
+                        </div>
+                        <p style="color: #bbffaf;" class="fw-bold mb-2">YOU SAVE $780</p>
+                        <div class="col-12 text-center mb-4">
+                            <a id="switchLink-6b" href="order.html" target="">
+                                <div class="pricing-card-btn">BUY NOW</div>
+                            </a>
+                        </div>
+                        <p class="small mb-3">60 Days Money Back Guarantee</p>
+                        <div class="col-7 mx-auto mb-3">
+                            <picture>
+                                <img src="images/cards.png" alt="Card" class="img-fluid">
+                            </picture>
+                        </div>
+                        <p class="mb-1">TOTAL: <span class="text-decoration-line-through">$1074</span> <span class="fw-bold">$294</span></p>
+                        <p class="fw-bold mb-0">*FREE SHIPPING</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4 order-2 order-md-3">
+                    <div class="theme-border-radius border border-2 border-gray text-center p-4 pricing-card bg-01">
+                        <h3 class="mb-0 fw-bold">Most Popular</h3>
+                        <p class="small mb-0">90 Day Supply, 3 Bottles</p>
+                        <div class="col-9 mx-auto py-3">
+                            <div style="height: 200px; display: flex; align-items: center; justify-content: center;">
+                                <img src="images/3b.png" alt="4b" style="max-width: 300px;">
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <h4 class="display-2 fw-bold">$72</h4>
+                            <div class="ms-2 pb-2 small">
+                                <span class="d-block text-start">Per</span>
+                                <span class="d-block text-start">Bottle</span>
+                            </div>
+                        </div>
+                        <p style="color: #11bc27;" class="fw-bold mb-2">YOU SAVE $321</p>
+                        <div class="col-12 text-center mb-4">
+                            <a id="switchLink-3b" href="order.html" target="">
+                                <div class="pricing-card-btn">BUY NOW</div>
+                            </a>
+                        </div>
+                        <p class="small mb-3">60 Days Money Back Guarantee</p>
+                        <div class="col-7 mx-auto mb-3">
+                            <picture>
+                                <img src="images/cards.png" alt="Card" class="img-fluid">
+                            </picture>
+                        </div>
+                        <p class="mb-1">TOTAL: <span class="text-decoration-line-through">$537</span> <span class="fw-bold">$216</span></p>
+                        <p class="fw-bold mb-0">*FREE SHIPPING</p>
+                    </div>
+                </div>
+            </div>
+
+    <p style="margin-top:28px;font-size:0.82rem;color:rgba(255,255,255,0.25);font-family:var(--font-ui);letter-spacing:0.3px;">
+      🔒 256-Bit SSL Secure Checkout · All Major Cards Accepted · No Subscriptions · No Auto-Billing
+    </p>
+  </div>
+</section>
+
+<!-- GUARANTEE -->
+<section class="sec" style="background:var(--light-blue);">
+  <div class="sec-inner" style="text-align:center;">
+    <div class="guarantee-box">
+      <div class="shield"><img src="images/60days.png" alt="Guarantee Img"></div> <br>
+      <div class="sec-eyebrow" style="text-align:center;">Risk-Free Promise</div>
+      <h2 style="font-family:var(--font-head);font-size:2.5rem;font-weight:900;text-transform:uppercase;color:var(--navy);margin-bottom:16px;">Our 60-Day <span style="color:var(--blue-bright)">Money Back Guarantee</span></h2>
+      <div class="blue-rule"></div>
+      <p style="font-size:1.05rem;color:var(--gray-mid);line-height:1.85;max-width:580px;margin:0 auto 20px;">
+        We're so confident PressureCalmX® will help support healthy blood pressure already within a normal range and overall cardiovascular wellness that we back every order with a full <strong style="color:var(--navy);">60-day, no-questions-asked money-back guarantee.</strong>
+      </p>
+      <p style="font-size:1rem;color:var(--gray-mid);line-height:1.85;max-width:580px;margin:0 auto;">
+        If you're not completely satisfied with your experience for any reason, simply email
+        <strong style="color:var(--blue);"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="0c7f797c7c637e784c7c7e697f7f797e696f6d606174226f6361">[email&nbsp;protected]</a></strong> within 60 days of purchase. We'll refund every penny. No hassle. No paperwork. <strong style="color:var(--navy);">You keep everything. We take all the risk.</strong>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec" style="background:var(--off-white);">
+  <div class="sec-inner" style="text-align:center;">
+    <div class="sec-eyebrow">Questions &amp; Answers</div>
+    <h2 class="sec-title">Frequently Asked <span>Questions</span></h2>
+    <div class="blue-rule"></div>
+    <div class="faq-wrap">
+
+      <div class="faq-item">
+        <p class="faq-q">Q: How soon will I notice a difference?</p>
+        <p class="faq-a">A: Everyone's body responds differently. Many customers report feeling more balanced and energized after several weeks of consistent use. Because natural ingredients work gradually, we recommend taking PressureCalmX® daily for at least 90 days to experience its full benefits.</p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">Q: Is PressureCalmX® safe to take with my current medications?</p>
+        <p class="faq-a">A: We recommend speaking with your healthcare provider before adding any dietary supplement to your routine, especially if you are taking medications for blood pressure, heart health, or any other medical condition. Your provider can review the ingredient list and determine what's appropriate for your individual needs.</p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">Q: How do I take PressureCalmX®?</p>
+        <p class="faq-a">A: Take two (2) capsules daily with a meal and a full glass of water. Consistency is the key to getting the most from the carefully selected botanical ingredients. For best results, take PressureCalmX® every day as part of your healthy lifestyle.</p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">Q: Will PressureCalmX® lower my blood pressure?</p>
+        <p class="faq-a">A: PressureCalmX® is a dietary supplement and is not intended to diagnose, treat, cure, or prevent any disease. It is formulated to support healthy blood pressure already within a normal range, healthy circulation, and overall cardiovascular wellness. If you have concerns about your blood pressure, please consult your healthcare provider.</p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">Q: Is this a subscription? Will I be charged automatically?</p>
+        <p class="faq-a">A: No. Every PressureCalmX® purchase is a one-time order. There are no subscriptions, no automatic shipments, and no hidden fees. You will only be charged again if you choose to place another order.</p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">Q: Why do you recommend the 3 or 6-bottle package?</p>
+        <p class="faq-a">A: Natural supplements are designed to support your body over time, not overnight. Most customers choose the 3 or 6-bottle package because it provides a consistent daily supply while offering the best value per bottle and free shipping on qualifying orders.</p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">Q: What if it doesn't work for me?</p>
+        <p class="faq-a">A: That's exactly why every order is protected by our 60-Day Money-Back Guarantee. If you're not completely satisfied, simply contact <strong><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="94e7e1e4e4fbe6e0d4e4e6f1e7e7e1e6f1f7f5f8f9ecbaf7fbf9">[email&nbsp;protected]</a></strong> within 60 days of your purchase and we'll promptly issue a full refund. No questions asked.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <div class="sec-eyebrow" style="color:var(--blue-light);">Support Your Heart Every Day</div>
+  <h2>Take Control of Your <span>Heart Health</span><br>Starting Today</h2>
+  <p>Join thousands of Americans who trust PressureCalmX® to support healthy blood pressure already within a normal range, healthy circulation, and everyday cardiovascular wellness with a science-backed blend of natural ingredients.</p>
+  <p style="margin-top:18px;font-size:0.82rem;color:rgba(255,255,255,0.25);letter-spacing:0.3px;">🔒 Secure Order · 60-Day Guarantee · Free Shipping on 3 &amp; 6 Bottle Kits · Manufactured in USA · Aurora, CO</p>
+  <a href="#order" class="btn-buy" style="margin:0 auto;">
+    <svg width="16" height="16" fill="currentColor" viewBox="0 0 576 512"><path d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z"></path></svg>
+    Claim Your PressureCalmX® Now
+  </a>
+</section>
+
+<!--FOOTER-->
+    <section style="background-color: #000; padding-top: 50px; padding-bottom: 50px;">
+        <style>
+            #footer-bg-1 {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+            }
+
+            #footer-bg-2 {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+            }
+
+            @media (max-width: 580px) {
+                #footer-bg-1 {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                #footer-bg-2 {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 16px;
+                }
+            }
+        </style>
+        <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+
+            <div id="footer-bg-1">
+                <a href="https://pressurecalmx.com/info/terms.html" style="font-weight: lighter; text-decoration: none; color: #f8f8f8;">TERMS</a>
+                <a href="https://pressurecalmx.com/info/privacy.html" style="font-weight: lighter; text-decoration: none; color: #f8f8f8;">PRIVACY</a>
+                <a href="https://pressurecalmx.com/info/contact.html" style="font-weight: lighter; text-decoration: none; color: #f8f8f8;">CONTACT</a>
+                <a href="https://pressurecalmx.com/info/refund-policy.html" style="font-weight: lighter; text-decoration: none; color: #f8f8f8;">REFUND</a>
+                <a href="https://pressurecalmx.com/info/disclaimer.html" style="font-weight: lighter; text-decoration: none; color: #f8f8f8;">DISCLAIMER</a>
+                <a href="https://pressurecalmx.com/info/references.html" style="font-weight: normal; text-decoration: none; color: #f8f8f8;">REFERENCES</a>
+                <a href="https://pressurecalmx.com/info/shipping.html" style="font-weight: lighter; text-decoration: none; color: #f8f8f8;">SHIPPING</a>
+            </div> <br>
+
+            <div id="footer-bg-2">
+                <img src="images/buygoods-logo-white.svg" alt="" style="max-width: 180px;">
+                <p style="font-size: small; color: #f8f8f8; max-width: 1200px;">BuyGoods is the retailer of this
+                    product. BuyGoods is a registered trademark of BuyGoods, a Delaware corporation located at 1201 N
+                    Orange Street Suite #7223, Wilmington, DE, 19801, USA and used by permission. BuyGoods role as
+                    retailer does not constitute an endorsement, approval or review of this product or any claim,
+                    statement or opinion used in promotion of this product. Statements on this website have not been
+                    evaluated by the Food and Drug Administration. Products are not intended to diagnose, treat, cure or
+                    prevent any disease.</p>
+            </div> <br>
+
+            <p style="color: #fff;">Copyright © 2026. All Rights Reserved.</p>
+
+        </div>
+    </section>
+    <!--FOOTER-->
+
+<script data-cfasync="false" src="js/email-decode.min.js"></script>
+</body></html>

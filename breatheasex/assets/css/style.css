@@ -1,0 +1,459 @@
+html,
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+* {
+    font-family: Playfair Display, serif;
+}
+
+.bgback {
+    background: linear-gradient(135deg, #067389 30%, #0f0505f4 70%), url('../image/bg1.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+body {
+    padding-top: 68px;
+    /* match navbar height */
+}
+
+.logo {
+    width: 140px;
+}
+
+.nav {
+    background: linear-gradient(135deg, #000507 50%, #067389);
+}
+
+.navcolor {
+    background-color: #111111;
+}
+
+
+
+.sectioncolor {
+    background-color: #111111;
+}
+
+.btn1 {
+    background-color: #5E1B1D;
+    font-size: 1.4rem;
+    color: white;
+    font-weight: 500;
+    border-radius: 45px;
+}
+
+.btn1:hover {
+    color: white;
+}
+
+
+
+
+.navtext {
+    color: #f8f7f7;
+    font-size: 19px;
+
+}
+
+
+.navtext:hover {
+    color: #f6e124;
+}
+
+.bottle-snap {
+    background-color: #E6EDED;
+}
+
+h1 {
+    font-size: 2.7rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+p {
+    font-size: 1.4rem;
+
+}
+
+.faq {
+    font-size: 1.4rem;
+
+}
+
+.small {
+    font-size: 1.3rem;
+
+}
+
+.navcenter {
+    gap: 20px;
+}
+
+ul {
+    font-size: 1.4rem;
+}
+
+
+.paywidth {
+    width: 800px;
+}
+
+.btntext1 {
+    border-radius: 75px;
+    border: 1px solid #050200;
+    color: #050201;
+
+}
+
+/* Equal icon size */
+.feature-icon {
+    width: 250px;
+
+    object-fit: contain;
+}
+
+
+.feature-box {
+    border-radius: 10px;
+    border: 1px solid #6082b651;
+
+
+}
+
+.second {
+    height: 40vh;
+}
+
+
+
+.review-card {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+
+}
+
+
+.review-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+
+.a {
+    text-decoration: none;
+}
+
+.ingredient-card {
+    background: #f8f9fa;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.ingredient-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    background: linear-gradient(135deg, #111111, #1e8484);
+    color: white;
+
+}
+
+.ingredient-img {
+    width: 400px;
+
+    object-fit: contain;
+}
+
+.ingbg {
+    background-color: #111111;
+    color: white;
+    border-radius: 25px;
+}
+
+.btntext2 {
+    border-radius: 75px;
+    border: 2px solid black;
+    color: rgb(2, 0, 0);
+}
+
+
+.badge {
+    font-size: 1.4rem;
+}
+
+
+.gurentybadge {
+    width: 350px;
+}
+
+
+.about1 {
+    margin-top: -8px;
+
+
+}
+
+.ingimg {
+    width: 350px;
+    border-radius: 3%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.ingimg:hover {
+    transform: scale(1.04);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
+.payment-snap {
+    width: 1200px;
+}
+
+.custom-toggler {
+    border: none;
+    background: transparent;
+    padding: 8px;
+    margin-right: 15px;
+}
+
+
+
+.custom-toggler span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0 0 0px;
+    background-color: #faf5f3;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+
+
+
+/* Section margin top when click navbar section */
+section {
+    scroll-margin-top: 90px;
+}
+
+
+.custom-hover {
+    color: rgb(255, 253, 253);
+    text-decoration: none;
+}
+
+.custom-hover:hover {
+    color: #e5f505;
+    text-decoration: underline;
+
+}
+
+
+
+/* popup */
+
+
+/* ================ */
+
+.purchase-proof {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 15px 18px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    font-size: 14px;
+    max-width: 300px;
+    z-index: 9999;
+    display: none;
+    transform: translateX(-120%);
+    transition: transform 0.5s ease;
+    font-family: Arial, sans-serif;
+}
+
+.purchase-proof strong {
+    color: #1e7e34;
+}
+
+.purchase-proof small {
+    color: #777;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.footer-links li {
+    margin: 0px;
+
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+
+    }
+
+    .footer-links li {
+        margin-bottom: 2px !important;
+    }
+}
+
+
+/* Mobile View */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.7rem !important;
+        font-weight: 700;
+    }
+
+    h2 {
+        font-size: 1.6rem !important;
+        font-weight: 700;
+    }
+
+    h3 {
+        font-size: 1.4rem !important;
+        font-weight: 700;
+    }
+
+    p {
+        font-size: 1.3rem !important;
+
+    }
+
+    ul {
+        font-size: 1.3rem !important;
+    }
+
+    .faq {
+        font-size: 1.3rem !important;
+    }
+
+    .review-card {
+        text-align: center;
+    }
+
+    .btn1 {
+        width: 100%;
+        font-size: 1.3rem !important;
+    }
+
+  
+    .paywidth {
+        width: auto;
+    }
+
+
+    .btncenter {
+        justify-content: center;
+        padding-top: 25px;
+    }
+
+    .btntext {
+        font-size: 16px;
+    }
+
+
+    body {
+        margin-top: -15px
+    }
+
+    .bottle-6 {
+        width: auto;
+    }
+
+    .badge {
+        font-size: 1rem !important;
+    }
+
+    .revwidth {
+        height: auto;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+
+}
+
+@media (max-width: 992px) {
+
+
+
+    body {
+        margin-top: -15px
+    }
+
+
+    .claim {
+        width: 100%;
+    }
+
+    .navcenter {
+        text-align: center;
+        gap: 1px !important;
+
+    }
+
+    .btncenter {
+        justify-content: center;
+        padding-top: 25px;
+    }
+
+    .btn1 {
+        width: 100%;
+    }
+
+      .btn2 {
+        width: 100%;
+        font-size: 1.3rem !important;
+    }
+
+}
+
+
+@media(max-width:1500px) {
+
+
+    .hover-scale1 {
+        width: auto;
+    }
+
+
+}

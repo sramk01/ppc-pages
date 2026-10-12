@@ -1,0 +1,494 @@
+:root {
+    --navy: #132A3A;
+    --navy-dark: #0C1D29;
+    --gold: #F2AE30;
+    --gold-dark: #D6931B;
+    --teal: #1F6F5C;
+    --ink: #1B2A2E;
+    --paper: #FBF8F1;
+    --card: #FFFFFF;
+    --border: rgba(19, 42, 58, .12);
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--ink);
+    background: var(--paper);
+    padding-top: 80px
+}
+
+section {
+    scroll-margin-top: 68px;
+}
+
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+
+h1,
+h2,
+h3,
+.logo {
+    font-family: 'Fraunces', serif
+}
+
+a {
+    text-decoration: none
+}
+
+.eyebrow {
+    font-size: .75rem;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--teal)
+}
+
+.sectionband {
+    background: var(--navy)
+}
+
+.text-gold {
+    color: var(--gold) !important
+}
+
+.bg-gold {
+    background-color: var(--gold) !important;
+    color: var(--navy-dark) !important
+}
+
+.btn-gold {
+    background: var(--gold);
+    color: var(--navy-dark);
+    border: none;
+    font-weight: 700
+}
+
+.btn-gold:hover {
+    background: var(--gold-dark);
+    color: var(--navy-dark)
+}
+
+.btn-teal {
+    background: var(--teal);
+    color: #fff;
+    border: none;
+    font-weight: 700
+}
+
+.btn-teal:hover {
+    background: #175748;
+    color: #fff
+}
+
+.btn-outline-navy {
+    border: 1.5px solid var(--navy);
+    color: var(--navy);
+    font-weight: 700
+}
+
+.btn-outline-navy:hover {
+    background: var(--navy);
+    color: #fff
+}
+
+/* Navbar */
+.navbar {
+    background: var(--navy);
+}
+
+.logo {
+    color: #fff;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 1.8rem
+}
+
+.logo .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--gold);
+    display: inline-block;
+    margin-right: 6px
+}
+
+.logo:hover{
+    color: white;
+}
+
+.navtext {
+    color: rgba(255, 255, 255, .82) !important;
+    font-weight: 600;
+    letter-spacing: .03em;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+}
+
+.navtext:hover {
+    color: var(--gold) !important
+}
+
+/* Hero */
+.herobg {
+    background: radial-gradient(circle at 80% 20%, rgba(242, 174, 48, .18), transparent 55%), linear-gradient(160deg, var(--navy-dark), var(--navy));
+    margin-top: -20px;
+}
+
+.stat-strip {
+    background: rgba(255, 255, 255, .06);
+    border-top: 1px solid rgba(255, 255, 255, .12);
+    border-bottom: 1px solid rgba(255, 255, 255, .12)
+}
+
+.stat-num {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: var(--gold)
+}
+
+.img-frame {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 22px;
+    padding: 14px
+}
+
+.img-frame img {
+    border-radius: 14px;
+    width: 100%;
+    height: auto;
+    object-fit: cover
+}
+
+.card-soft {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 18px
+}
+
+.icon-badge {
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    background: rgba(31, 111, 92, .1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--teal);
+    font-size: 22px
+}
+
+.strike {
+    text-decoration: line-through;
+    color: #000504
+}
+
+/* Ingredient cards */
+.ing-card {
+    background: var(--card);
+    border-radius: 18px;
+    border: 1px solid var(--border);
+    overflow: hidden;
+    text-align: center
+}
+
+.ing-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover
+}
+
+.ing-card .body {
+    padding: 20px
+}
+
+h2{
+    font-size: 2.2rem;
+}
+
+.small1{
+    font-size: 1.4rem;
+}
+
+/* Pricing comparison */
+.price-table {
+    border-collapse: separate;
+    border-spacing: 0 14px
+}
+
+.price-table td {
+    vertical-align: middle;
+    padding: 16px 18px
+}
+
+.price-table tr {
+    background: var(--card);
+    border-radius: 16px
+}
+
+.price-table tr.featured {
+    background: var(--navy);
+    color: #fff
+}
+
+
+.price-table tr.featured .text-muted {
+    color: rgba(255, 255, 255, .7) !important
+}
+
+.checkout {
+    width: 800px;
+}
+
+.accordion-button {
+    font-size: 1.4rem !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background: rgba(31, 111, 92, .08);
+    color: var(--teal);
+    font-size: 1.4rem !important;
+}
+
+.accordion-button:focus {
+    box-shadow: none
+}
+
+.faq {
+    font-size: 1.4rem !important;
+}
+
+.footer {
+    background: var(--navy-dark);
+    color: rgba(255, 255, 255, .75)
+}
+
+.footer a {
+    color: rgba(255, 255, 255, .75)
+}
+
+.footer a:hover {
+    color: var(--gold)
+}
+
+.price-card.featured {
+    border: 2px solid var(--bs-warning) !important
+}
+
+p {
+    font-size: 1.4rem !important;
+}
+
+h3 {
+    font-size: 1.4rem !important;
+}
+
+.small {
+    font-size: 1.2rem;
+}
+
+.countdown div {
+    background: var(--navy);
+    color: #fff;
+    font-weight: 700;
+    padding: 10px 16px;
+    border-radius: 10px;
+    min-width: 58px;
+    text-align: center
+}
+
+.countdown span {
+    display: block;
+    font-size: 1rem;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    color: #eef2f1;
+    text-align: center;
+    margin-top: 4px
+}
+
+
+.faq-section {
+    background: #f3efe3;
+}
+
+
+
+/* ===========================
+   Fixed Navbar
+=========================== */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1050;
+
+    transition: all .3s ease;
+
+}
+
+body {
+    padding-top: 80px;
+}
+
+/* Navbar Brand */
+
+
+
+/* Navigation Links */
+
+.navtext {
+
+    font-weight: 600;
+
+    transition: .3s;
+}
+
+.navtext:hover,
+.navtext.active {
+    color: #F2AE30 !important;
+}
+
+/* CTA Button */
+
+
+
+/* ===========================
+   Toggle Button
+=========================== */
+
+.navbar-toggler {
+    border: 2px solid #a2a917;
+    border-radius: 8px;
+    padding: 6px 10px;
+    box-shadow: none !important;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* Green Hamburger Icon */
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2825,135,84,1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2.5' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* ===========================
+   Mobile Menu
+=========================== */
+
+@media (max-width:991.98px) {
+
+    .navbar-collapse {
+        margin-top: 15px;
+        color: #F2AE30;
+        border-radius: 12px;
+        padding: 20px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
+    }
+
+    .nav-item {
+        margin-bottom: 10px;
+    }
+
+    .btn1 {
+        width: 100%;
+        text-align: center;
+    }
+
+
+
+    .card-soft {
+        text-align: start;
+    }
+
+    .checkout {
+        width: auto;
+    }
+
+    h2{
+        font-size: 1.7rem !important;
+    }
+
+}
+
+ul {
+    font-size: 1.3rem;
+}
+
+
+
+.guarantee-section {
+    background: #f3efe3;
+}
+
+.guarantee-box {
+    background: var(--navy);
+}
+
+.guarantee-img {
+    max-width: 360px;
+}
+
+.guarantee-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.guarantee-text {
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.75;
+}
+
+
+
+.review-img {
+    width: 106px;
+    height: 106px;
+    object-fit: cover;
+}
+
+.quality-section {
+    background: #f3efe3;
+}
+
+.quality-section .card-soft {
+    background: #ffffff;
+    border-radius: 18px;
+}
+
+.quality-section .img-frame {
+    background: #faf9f5;
+    border-radius: 14px;
+}
+
+.quality-section .bg-teal {
+    background: var(--teal);
+}
+
+.quality-badge {
+    background: var(--gold);
+    color: var(--navy-dark);
+}
+
+.fda-badge {
+    background: #c0392b;
+    color: #ffffff;
+}
+
+.formula-badge {
+    background: var(--navy);
+    color: #ffffff;
+}

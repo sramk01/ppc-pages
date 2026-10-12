@@ -1,0 +1,105 @@
+/* =========================================================
+   GLUCONARA — Responsive Overrides
+   ========================================================= */
+
+/* Laptop / small desktop */
+@media (max-width: 1199.98px) {
+  .section {
+    padding: 72px 0;
+  }
+  .price-card.featured {
+    transform: none;
+  }
+}
+
+/* Tablet */
+@media (max-width: 991.98px) {
+  .section {
+    padding: 60px 0;
+  }
+  .hero {
+    padding: 40px 0 50px;
+    text-align: center;
+  }
+  .hero-stats {
+    justify-content: center;
+  }
+  .hero-dial-wrap {
+    margin-top: 36px;
+  }
+  .step-row {
+    margin-bottom: 24px;
+  }
+  .guarantee-seal {
+    width: 130px;
+    height: 130px;
+  }
+  .final-cta {
+    padding: 44px 24px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767.98px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.6rem;
+  }
+  .section {
+    padding: 48px 0;
+  }
+  .navbar-brand-text {
+    font-size: 1.25rem;
+  }
+  .price-card {
+    margin-bottom: 20px;
+  }
+  .price-card.featured {
+    transform: none;
+  }
+  .trust-item {
+    justify-content: flex-start;
+    text-align: left;
+  }
+  .footer-legal-note {
+    font-size: 0.72rem;
+  }
+  .sticky-cta {
+    display: flex;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 479.98px) {
+  .hero-badge {
+    font-size: 0.72rem;
+    padding: 6px 12px;
+  }
+  .btn-brand {
+    padding: 14px 24px;
+    font-size: 0.94rem;
+    width: 100%;
+  }
+  .btn-outline-brand {
+    width: 100%;
+  }
+  .guarantee-seal {
+    width: 110px;
+    height: 110px;
+  }
+  .guarantee-seal .g-num {
+    font-size: 1.6rem;
+  }
+}
+
+/* Print */
+@media print {
+  .navbar-gluconara,
+  .back-to-top,
+  .sticky-cta,
+  footer .social-row {
+    display: none !important;
+  }
+}

@@ -1,0 +1,449 @@
+html,
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+* {
+    font-family: Playfair Display, serif;
+}
+
+
+
+body {
+    padding-top: 68px;
+    /* match navbar height */
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 800;
+    color: #080601;
+}
+
+.nav {
+    background-color: rgb(252, 252, 252);
+}
+
+.herobg {
+    background: linear-gradient(135deg, #fcfcfc 0%, #bbbec2 100%);
+}
+
+.btn1 {
+    background: #020811;
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    transition: .3s;
+}
+
+.btn1:hover {
+    transform: translateY(-1px);
+    color: #fff;
+}
+
+.hero-benefit {
+    background: #fff;
+    border-radius: 15px;
+    padding: 15px;
+
+}
+
+.hero-rating {
+    background: #fff;
+    border-radius: 20px;
+
+}
+
+.sectioncolor {
+    background-color: #4B1775;
+
+}
+
+.navcolor {
+    background-color: #4B1775;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+p {
+    font-size: 1.4rem;
+}
+
+ul {
+    font-size: 1.4rem;
+}
+
+.small1 {
+    font-size: 1.2rem;
+}
+
+.faq {
+    font-size: 1.4rem;
+}
+
+
+.navtext {
+    color: #050101;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.ingimg {
+    width: 250px;
+    height: 250px;
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius: 5%;
+    object-fit: cover;
+}
+
+
+.navtext:hover {
+    color: #0911f1;
+}
+
+.bannerimg {
+    width: 320px;
+}
+
+.feature-box {
+    border-radius: 10px;
+    border: 0.5px solid #575556;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    transition: all .3s ease;
+    padding: 15px;
+    background-color: white;
+
+}
+
+.benefit-card {
+    background-color: #83A5AA5f;
+    border-radius: 10px;
+}
+
+.review-card {
+    background: #ffffff;
+    border-radius: 15px;
+    border: 0.5px solid #B4C424;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+    text-align: center;
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+.feature-card {
+    border-radius: 10px;
+    border: 0.5px solid #7c7579;
+}
+
+.revimg {
+    width: 210px;
+    height: 290px;
+    object-fit: fill;
+    border-radius: 2%;
+    border: 1px solid #113663;
+}
+
+
+
+
+.bottle-6 {
+    width: 30vw;
+}
+
+.ingbg {
+    background: linear-gradient(135deg, #1c4e55 45%, #113663);
+}
+
+.payment-snap {
+    width: 1200px;
+}
+
+.custom-toggler {
+    border: none;
+    background: transparent;
+    padding: 8px;
+}
+
+
+
+.custom-toggler span {
+    display: block;
+    width: 30px;
+    height: 4px;
+    margin: 5px 0 0 0px;
+    background-color: #080102;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+
+.bonus-card {
+    transition: all .35s ease;
+    background: #fff;
+    border-radius: 15px;
+    border: 2px solid #2d6983;
+}
+
+.bonus-card:hover {
+    transform: translateY(-8px);
+}
+
+
+
+.bonus-card img {
+    transition: all .4s ease;
+}
+
+.bonus-card:hover img {
+    transform: scale(1.05);
+}
+
+.bonus-card .badge {
+    font-size: .75rem;
+    letter-spacing: .5px;
+}
+
+@media(max-width:991px) {
+    .bonus-card .card-body {
+        border-left: none;
+        border-top: 5px solid #198754;
+    }
+}
+
+
+
+/* Section margin top when click navbar section */
+section {
+    scroll-margin-top: 68px;
+}
+
+
+.custom-hover {
+    color: rgb(253, 253, 251);
+    text-decoration: none;
+}
+
+.custom-hover:hover {
+    color: #e5f505;
+    text-decoration: underline;
+
+}
+
+
+.gurenty {
+    background-color: #f8fafa;
+    border-radius: 30px;
+    color: rgb(15, 1, 1);
+}
+
+
+/* popup */
+
+
+/* ================ */
+
+.purchase-proof {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 15px 18px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    font-size: 14px;
+    max-width: 300px;
+    z-index: 9999;
+    display: none;
+    transform: translateX(-120%);
+    transition: transform 0.5s ease;
+    font-family: Arial, sans-serif;
+}
+
+.purchase-proof strong {
+    color: #1e7e34;
+}
+
+.purchase-proof small {
+    color: #777;
+}
+
+
+/* Mobile View */
+@media (max-width: 768px) {
+
+    .btncenter {
+        justify-content: center;
+        padding-top: 25px;
+    }
+
+
+    .navcenter {
+        text-align: center;
+    }
+
+
+
+    body {
+        margin-top: -15px
+    }
+
+    .bottle-6 {
+        width: auto;
+    }
+
+    .revwidth {
+        height: auto;
+    }
+
+
+    h1 {
+        font-size: 1.7rem !important;
+    }
+
+    h2 {
+        font-size: 1.6rem !important;
+        font-weight: 600;
+    }
+
+    h3 {
+        font-size: 1.5rem !important;
+        font-weight: 600;
+    }
+
+    p {
+        font-size: 1.3rem !important;
+    }
+
+    ul {
+        font-size: 1.3rem !important;
+    }
+
+    .small {
+        font-size: 1rem !important;
+    }
+
+    .faq {
+        font-size: 1.3rem !important;
+    }
+
+    .list-inline {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .list-inline-item {
+        display: block;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .list-inline-item a {
+        display: block;
+        padding: 1px 0;
+    }
+
+    .feature-box {
+        text-align: center;
+    }
+
+
+}
+
+@media (max-width: 992px) {
+    .btn1 {
+        width: 96%;
+        font-size: 1.3rem !important;
+    }
+
+    .btn2 {
+        width: 96% !important;
+        font-size: 1.3rem !important;
+    }
+
+
+
+    body {
+        margin-top: -15px
+    }
+
+
+    .claim {
+        width: 100%;
+    }
+
+    .bottle22 {
+        height: auto;
+    }
+
+    .navcenter {
+        text-align: center;
+    }
+
+
+
+}
+
+@media(max-width:1200px) {
+
+
+    .payment-snap {
+        width: auto;
+    }
+
+    .bottle-6 {
+        width: auto;
+    }
+
+    .second {
+        height: auto;
+    }
+
+    .howimg {
+        width: auto;
+    }
+
+}
+
+
+@media(max-width:1500px) {
+    .how {
+        height: auto;
+    }
+
+    .product-img1 {
+        height: auto;
+    }
+
+    .bottle3 {
+        height: auto;
+    }
+
+    .hover-scale1 {
+        width: auto;
+    }
+
+
+
+}

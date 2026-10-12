@@ -1,0 +1,182 @@
+[
+  {
+    "filename": "flowstrong-favicon.webp",
+    "size": "512x512",
+    "width": 512,
+    "height": 512,
+    "alt": "FlowStrong logo favicon",
+    "title": "FlowStrong logo favicon",
+    "prompt": "Minimal square logo icon"
+  },
+  {
+    "filename": "flowstrong-og-image.webp",
+    "size": "1200x630",
+    "width": 1200,
+    "height": 630,
+    "alt": "FlowStrong social share image",
+    "title": "FlowStrong social share image",
+    "prompt": "Wide social share graphic with product name and tagline"
+  },
+  {
+    "filename": "flowstrong-twitter-image.webp",
+    "size": "1200x600",
+    "width": 1200,
+    "height": 600,
+    "alt": "FlowStrong Twitter card image",
+    "title": "FlowStrong Twitter card image",
+    "prompt": "Wide Twitter/X card graphic with product name and tagline"
+  },
+  {
+    "filename": "flowstrong-hero.webp",
+    "size": "1600x900",
+    "width": 1600,
+    "height": 900,
+    "alt": "FlowStrong Men's Health hero banner",
+    "title": "FlowStrong Men's Health hero banner",
+    "prompt": "Professional photo matching the section context"
+  },
+  {
+    "filename": "flowstrong-certified.webp",
+    "size": "300x300",
+    "width": 300,
+    "height": 300,
+    "alt": "Certification / trust badge",
+    "title": "Certification / trust badge",
+    "prompt": "Professional photo matching the section context"
+  },
+  {
+    "filename": "flowstrong-product-main.webp",
+    "size": "1200x1200",
+    "width": 1200,
+    "height": 1200,
+    "alt": "FlowStrong bottle product photo",
+    "title": "FlowStrong bottle product photo",
+    "prompt": "Professional photo matching the section context"
+  },
+  {
+    "filename": "flowstrong-customer-review-1.webp",
+    "size": "200x200",
+    "width": 200,
+    "height": 200,
+    "alt": "James W., 71 avatar",
+    "title": "James W., 71 avatar",
+    "prompt": "Friendly headshot placeholder, neutral background"
+  },
+  {
+    "filename": "flowstrong-customer-review-2.webp",
+    "size": "200x200",
+    "width": 200,
+    "height": 200,
+    "alt": "Robert M., 73 avatar",
+    "title": "Robert M., 73 avatar",
+    "prompt": "Friendly headshot placeholder, neutral background"
+  },
+  {
+    "filename": "flowstrong-customer-review-3.webp",
+    "size": "200x200",
+    "width": 200,
+    "height": 200,
+    "alt": "Michael T., 69 avatar",
+    "title": "Michael T., 69 avatar",
+    "prompt": "Friendly headshot placeholder, neutral background"
+  },
+  {
+    "filename": "flowstrong-discount.webp",
+    "size": "400x400",
+    "width": 400,
+    "height": 400,
+    "alt": "Limited-time discount badge",
+    "title": "Limited-time discount badge",
+    "prompt": "Professional photo matching the section context"
+  },
+  {
+    "filename": "flowstrong-guarantee.webp",
+    "size": "400x400",
+    "width": 400,
+    "height": 400,
+    "alt": "FlowStrong guarantee badge",
+    "title": "FlowStrong guarantee badge",
+    "prompt": "Professional photo matching the section context"
+  },
+  {
+    "filename": "flowstrong-ingredient-1.webp",
+    "size": "600x600",
+    "width": 600,
+    "height": 600,
+    "alt": "Saw Palmetto Extract",
+    "title": "Saw Palmetto Extract",
+    "prompt": "Professional photo matching the section context"
+  },
+  {
+    "filename": "flowstrong-ingredient-2.webp",
+    "size": "600x600",
+    "width": 600,
+    "height": 600,
+    "alt": "Pumpkin Seed Extract",
+    "title": "Pumpkin Seed Extract",
+    "prompt": "Professional photo matching the section context"
+  },
+  {
+    "filename": "flowstrong-ingredient-3.webp",
+    "size": "600x600",
+    "width": 600,
+    "height": 600,
+    "alt": "Stinging Nettle (Leaf)",
+    "title": "Stinging Nettle (Leaf)",
+    "prompt": "Professional photo matching the section context"
+  },
+  {
+    "filename": "flowstrong-ingredient-4.webp",
+    "size": "600x600",
+    "width": 600,
+    "height": 600,
+    "alt": "Tomato Powder",
+    "title": "Tomato Powder",
+    "prompt": "Professional photo matching the section context"
+  },
+  {
+    "filename": "flowstrong-ingredient-5.webp",
+    "size": "600x600",
+    "width": 600,
+    "height": 600,
+    "alt": "Pygeum Africanum Bark",
+    "title": "Pygeum Africanum Bark",
+    "prompt": "Professional photo matching the section context"
+  },
+  {
+    "filename": "flowstrong-ingredient-6.webp",
+    "size": "600x600",
+    "width": 600,
+    "height": 600,
+    "alt": "Zinc",
+    "title": "Zinc",
+    "prompt": "Professional photo matching the section context"
+  },
+  {
+    "filename": "flowstrong-product-1-bottle.webp",
+    "size": "1000x900",
+    "width": 1000,
+    "height": 900,
+    "alt": "1 Bottle plan",
+    "title": "1 Bottle plan",
+    "prompt": "Professional photo matching the section context"
+  },
+  {
+    "filename": "flowstrong-product-3-bottles.webp",
+    "size": "1000x900",
+    "width": 1000,
+    "height": 900,
+    "alt": "3 Bottles plan",
+    "title": "3 Bottles plan",
+    "prompt": "Professional photo matching the section context"
+  },
+  {
+    "filename": "flowstrong-product-6-bottles.webp",
+    "size": "1000x900",
+    "width": 1000,
+    "height": 900,
+    "alt": "6 Bottles plan",
+    "title": "6 Bottles plan",
+    "prompt": "Professional photo matching the section context"
+  }
+]

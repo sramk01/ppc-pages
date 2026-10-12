@@ -1,0 +1,451 @@
+html,
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+body {
+    padding-top: 92px;
+    /* match navbar height */
+}
+
+
+.navcolor {
+    background-color: white;
+}
+
+.footercolor {
+    background-color: #62453F;
+}
+
+.logo {
+    width: 180px;
+}
+
+.sectioncolor {
+   background-color: #62453F;
+}
+
+.sectioncolor1 {
+    background-color: white;
+}
+
+
+
+.bgclr {
+    background-color: #EBCB8F;
+    color: white;
+
+}
+
+.ingclr {
+    /* height: 35vh; */
+    background-color: white;
+    color: black;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.ingclr1 {
+    /* height: 20vh; */
+    background-color: white;
+    color: black;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+
+
+.contact {
+    background-color: #DAA06D
+}
+
+
+.about {
+    background-color: white;
+}
+
+.navtext {
+    color: black;
+    font-size: 1.5rem;
+    ;
+    font-weight: 500;
+}
+
+.navtext:hover {
+    color: #454B1B;
+}
+
+
+.btntext1 {
+    border-radius: 20px;
+    background-color: #62453F;
+    font-weight: 650;
+    border: 1px solid rgb(255, 255, 253);
+
+}
+
+
+
+
+.gurentybadge {
+    width: 250px;
+}
+
+
+.about1 {
+    margin-top: -8px;
+}
+
+
+
+.hero-bg {
+    min-height: 5vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.hero-overlay {
+    padding: 6rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* Title */
+.hero-title {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+.hero-title span {
+    display: block;
+}
+
+.bottle-6 {
+    width: 28vw;
+}
+
+
+.accordion-button {
+    background: #f7f9fc;
+    border-radius: 12px !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background: #e8f4ff;
+    color: #0d6efd;
+}
+
+.accordion-item {
+    overflow: hidden;
+}
+
+/* ---------- */
+
+
+.avoid {
+    width: 48%;
+    height: 34vh;
+    background-color: white;
+    color: black;
+   
+}
+
+.avoid1 {
+    background-color: white;
+    color: black;
+   
+}
+
+.payment-snap {
+    width: 60vw;
+}
+
+.custom-toggler {
+    border: none;
+    background: transparent;
+    padding: 8px;
+}
+
+.bginfo {
+
+    border-radius: 45px;
+    background-color: #0f752842;
+}
+
+.custom-toggler span {
+    display: block;
+    width: 35px;
+    height: 4px;
+    margin: 5px 0 0 0px;
+    background-color: rgb(0, 4, 0);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.button-border {
+    border-radius: 400px;
+}
+
+.btnclor {
+    background-color: #DAA06D;
+}
+
+
+/* Section margin top when click navbar section */
+section {
+    scroll-margin-top: 85px;
+}
+
+
+.custom-hover {
+    color: white;
+    text-decoration: none;
+}
+
+.custom-hover:hover {
+    color: #e1d604;
+    text-decoration: underline;
+
+}
+
+/* ============bonus card============== */
+.bonus-card {
+    border: 0.1rem solid transparent;
+    transition: 0.4s ease;
+    background-image: linear-gradient(white, white),
+        linear-gradient(120deg, #3d2929, #2b4855);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
+
+
+.bonus-img img {
+    max-width: 230px;
+}
+
+.bonus-img1 img {
+    height: 18vh;
+    width: 34vw;
+}
+
+/* ================= */
+
+.bannerimg {
+    height: 48vh;
+}
+
+.bannerimg1 {
+    height: 52vh;
+}
+
+
+
+.free1 {
+    background-color: #059720;
+    margin-left: 278px;
+    margin-top: -60px;
+    border-radius: 80px;
+
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .cent {
+        text-align: center;
+    }
+
+    .bonus-img img {
+        max-width: 160px;
+    }
+
+    .bonus-img1 img {
+        height: auto;
+        width: auto;
+    }
+
+    .orderbuttn {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        padding-top: 0px;
+
+    }
+
+
+
+    /* ============= */
+
+
+    .badgeicon {
+        margin-bottom: 15px;
+    }
+
+    .btncenter {
+        justify-content: center;
+        padding-top: 25px;
+    }
+
+    .btntext {
+        font-size: 16px;
+    }
+
+    .imglimited {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .avoid {
+        width: auto;
+        height: auto;
+    }
+
+    .ingclr {
+        height: auto;
+    }
+
+    .ingclr1 {
+        height: auto;
+    }
+
+
+    .navcenter {
+        text-align: center;
+    }
+
+
+    body {
+        margin-top: -15px
+    }
+
+    .bottle-6 {
+        width: auto;
+    }
+
+    
+
+    .hero-bg {
+        width: auto;
+    }
+
+    .gurentybadge {
+        width: auto;
+    }
+
+    .payment-snap {
+        width: auto;
+    }
+
+
+    .whatsection {
+        margin-top: -25px;
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 992px) {
+
+    .orderbuttn {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        padding-top: 10px;
+
+    }
+
+
+
+    .ingclr {
+        height: auto;
+    }
+
+    .ingclr1 {
+        height: auto;
+    }
+
+
+   
+    .avoid {
+        width: auto;
+        height: auto;
+    }
+
+    body {
+        margin-top: -15px
+    }
+
+    .whatsection {
+        margin-top: -25px;
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+
+    .bottle-6 {
+        width: auto;
+    }
+
+    .bottle11 {
+        height: 420px;
+    }
+
+
+
+
+    .btncenter {
+        justify-content: center;
+        padding-top: 25px;
+    }
+
+
+    .navcenter {
+        text-align: center;
+    }
+
+}
+
+
+
+@media(max-width:1200px) {
+    .avoid {
+        width: auto;
+        height: auto;
+    }
+
+
+
+    .ingclr {
+        height: auto;
+    }
+
+    .ingclr1 {
+        height: auto;
+    }
+
+}
+
+@media(max-width:1400px) {
+
+
+
+    .ingclr {
+        height: auto;
+    }
+
+    .ingclr1 {
+        height: auto;
+    }
+
+
+}

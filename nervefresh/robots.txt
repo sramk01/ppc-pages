@@ -1,0 +1,26 @@
+User-agent: *
+Disallow: 
+Disallow: /cgi-bin/
+Sitemap: https://happylivingalways.com/nervefresh/sitemap.xml
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

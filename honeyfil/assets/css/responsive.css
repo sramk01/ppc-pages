@@ -1,0 +1,51 @@
+/* ==========================================================================
+   HONEYFIL — Responsive rules
+   Breakpoints follow Bootstrap 5.3: <576 phone, 576-768 phablet,
+   768-992 tablet, 992-1200 laptop, 1200+ desktop
+   ========================================================================== */
+
+/* Laptop / small desktop */
+@media (max-width: 1199.98px){
+  .py-section{padding-top:4.5rem;padding-bottom:4.5rem;}
+  .pricing-card.featured{transform:none;}
+}
+
+/* Tablet */
+@media (max-width: 991.98px){
+  .hero{padding-top:6rem;padding-bottom:3.5rem;text-align:center;}
+  .hero .lede{margin-left:auto;margin-right:auto;}
+  .hero-cta-row{justify-content:center;}
+  .hero-badges{justify-content:center;}
+  .hero-visual{margin-top:2.5rem;max-width:380px;margin-left:auto;margin-right:auto;}
+  .py-section{padding-top:3.6rem;padding-bottom:3.6rem;}
+  .hf-timeline{padding-left:2rem;}
+}
+
+/* Phablet / large phone */
+@media (max-width: 767.98px){
+  body{font-size:15.5px;}
+  .section-title{font-size:1.7rem;}
+  .hero h1{font-size:2rem;}
+  .guarantee-seal{width:120px;height:120px;}
+  .guarantee-seal .g-num{font-size:1.9rem;}
+  .cta-band{padding:2.2rem 1.2rem;}
+  .pricing-card{padding:1.8rem 1.2rem;}
+  .trust-strip .row > div{margin-bottom:.6rem;}
+}
+
+/* Phone */
+@media (max-width: 575.98px){
+  .py-section{padding-top:2.8rem;padding-bottom:2.8rem;}
+  .hero-cta-row{flex-direction:column;align-items:stretch;}
+  .hero-cta-row .btn-honey, .hero-cta-row .btn-outline-gold{width:100%;justify-content:center;text-align:center;}
+  .image-placeholder{min-height:200px;padding:1.1rem;}
+  .sticky-cta{padding:.6rem .8rem;}
+  .sticky-cta .btn-ember{padding:.75rem 1rem;font-size:.92rem;width:100%;justify-content:center;}
+  .back-to-top{right:.8rem;bottom:4.6rem;width:2.4rem;height:2.4rem;}
+  .hf-navbar .navbar-brand{font-size:1.25rem;}
+}
+
+/* Show sticky CTA only on small screens */
+@media (min-width: 992px){
+  .sticky-cta{display:none !important;}
+}

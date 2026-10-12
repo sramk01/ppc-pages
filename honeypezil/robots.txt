@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /order
+Allow: /
+Sitemap: http://happylivingalways.com/honeypezil/sitemap.xml

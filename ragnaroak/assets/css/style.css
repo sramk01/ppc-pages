@@ -1,0 +1,323 @@
+/* =============================================================
+   RAGNAROAK — Core Stylesheet
+   Design tokens (Norse-warrior direction, distinct from other builds)
+   ============================================================= */
+:root{
+  --rg-red: #A01A30;
+  --rg-red-dark: #7A1425;
+  --rg-ember: #C4432F;
+  --rg-black: #17110F;
+  --rg-black-soft: #241A17;
+  --rg-parchment: #F2E9DC;
+  --rg-parchment-2: #E8DAC2;
+  --rg-bronze: #9C7A3C;
+  --rg-bronze-light: #C9A227;
+  --rg-steel: #4A5560;
+  --rg-white: #FFFFFF;
+  --rg-ink-soft: #6B5D52;
+
+  --font-display: 'Cinzel', Georgia, serif;
+  --font-body: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --radius-lg: 18px;
+  --radius-md: 12px;
+  --radius-sm: 6px;
+
+  --shadow-soft: 0 22px 48px -22px rgba(23,17,15,0.55);
+  --shadow-card: 0 12px 30px -14px rgba(23,17,15,0.28);
+}
+
+*{ box-sizing:border-box; }
+html{ scroll-behavior:smooth; }
+
+body{
+  font-family:var(--font-body);
+  color:var(--rg-black);
+  background:var(--rg-parchment);
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+
+h1,h2,h3,h4,.font-display{
+  font-family:var(--font-display);
+  font-weight:700;
+  letter-spacing:0.01em;
+  color:var(--rg-black);
+}
+
+a{ text-decoration:none; }
+
+.eyebrow{
+  font-family:var(--font-body);
+  font-size:0.72rem;
+  font-weight:800;
+  letter-spacing:0.18em;
+  text-transform:uppercase;
+  color:var(--rg-bronze);
+}
+
+.section{ padding:5.5rem 0; }
+@media (max-width:767px){ .section{ padding:3.25rem 0; } }
+
+.section-red{
+  background:linear-gradient(180deg,var(--rg-red) 0%, var(--rg-red-dark) 100%);
+  color:var(--rg-parchment);
+}
+.section-red h2,.section-red h3{ color:var(--rg-white); }
+.section-red .eyebrow{ color:var(--rg-bronze-light); }
+
+.section-black{
+  background:var(--rg-black);
+  color:var(--rg-parchment-2);
+  background-image:
+    radial-gradient(circle at 12% 20%, rgba(156,122,60,0.10) 0%, transparent 45%),
+    radial-gradient(circle at 88% 80%, rgba(160,26,48,0.14) 0%, transparent 50%);
+}
+.section-black h2,.section-black h3{ color:var(--rg-white); }
+
+.rule-divider{
+  width:100%;
+  height:1px;
+  background:linear-gradient(90deg, transparent, var(--rg-bronze) 50%, transparent);
+  margin:0 auto;
+}
+
+.btn-rg{
+  display:inline-flex;
+  align-items:center;
+  gap:.55rem;
+  background:var(--rg-red);
+  color:var(--rg-white);
+  font-weight:700;
+  padding:0.95rem 2.1rem;
+  border-radius:6px;
+  border:none;
+  font-size:0.98rem;
+  letter-spacing:0.02em;
+  box-shadow:var(--shadow-soft);
+  transition:transform .18s ease, box-shadow .18s ease, background .18s ease;
+}
+.btn-rg:hover{ background:var(--rg-ember); transform:translateY(-2px); color:var(--rg-white); }
+.btn-rg-outline{
+  background:transparent;
+  border:2px solid var(--rg-bronze);
+  color:var(--rg-black);
+}
+.btn-rg-outline:hover{ background:var(--rg-bronze); color:var(--rg-white); }
+.section-black .btn-rg-outline, .section-red .btn-rg-outline{ color:var(--rg-white); border-color:var(--rg-parchment-2); }
+
+/* ---------- Navbar ---------- */
+.rg-navbar{
+  background:var(--rg-black);
+  padding:0.9rem 0;
+  border-bottom:1px solid rgba(201,162,39,0.25);
+}
+.rg-navbar .brand-word{
+  font-family:var(--font-display);
+  font-size:1.4rem;
+  font-weight:700;
+  letter-spacing:0.06em;
+  color:var(--rg-parchment);
+}
+.rg-navbar .brand-word span{ color:var(--rg-bronze-light); }
+.rg-navbar .nav-link{ color:var(--rg-parchment-2); font-weight:600; font-size:.92rem; }
+.rg-navbar .nav-link:hover{ color:var(--rg-bronze-light); }
+.rg-navbar .navbar-toggler{ border-color:rgba(242,233,220,0.3); }
+
+/* ---------- Hero ---------- */
+.hero{
+  padding:3.5rem 0 4.5rem;
+  background:
+    radial-gradient(140% 120% at 90% -10%, rgba(160,26,48,0.10) 0%, transparent 55%),
+    var(--rg-parchment);
+  overflow:hidden;
+}
+.hero h1{
+  font-size:clamp(2rem, 3.4vw, 2.9rem);
+  line-height:1.16;
+}
+.hero .lede{
+  font-size:1.06rem;
+  color:var(--rg-ink-soft);
+  max-width:48ch;
+}
+.hero-badges{ display:flex; gap:1.1rem; flex-wrap:wrap; margin-top:1.75rem; }
+.hero-badge{ font-size:0.82rem; font-weight:700; color:var(--rg-ink-soft); display:flex; align-items:center; gap:.4rem; }
+.hero-badge svg{ width:18px; height:18px; color:var(--rg-red); flex-shrink:0; }
+
+/* Signature element: Performance Rune Circle */
+.rune-wrap{ position:relative; display:flex; align-items:center; justify-content:center; }
+.rune-card{
+  background:var(--rg-black);
+  border:1px solid rgba(201,162,39,0.35);
+  border-radius:var(--radius-lg);
+  box-shadow:var(--shadow-card);
+  padding:2rem;
+  width:100%;
+  max-width:420px;
+}
+.rune-label{
+  text-align:center;
+  font-size:.76rem;
+  font-weight:800;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--rg-bronze-light);
+  margin-top:.9rem;
+}
+.rune-legend{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:.75rem 1rem;
+  margin-top:1.2rem;
+  padding-top:1.2rem;
+  border-top:1px solid rgba(201,162,39,0.25);
+}
+.rune-legend div{ text-align:center; }
+.rune-legend strong{ display:block; font-family:var(--font-display); font-size:1rem; color:var(--rg-parchment); }
+.rune-legend span{ font-size:.68rem; color:rgba(242,233,220,0.6); text-transform:uppercase; letter-spacing:.05em; }
+
+/* ---------- Image placeholder ---------- */
+.image-placeholder{
+  background:repeating-linear-gradient(135deg, var(--rg-parchment-2), var(--rg-parchment-2) 12px, #DCC9A6 12px, #DCC9A6 24px);
+  border:1px dashed var(--rg-bronze);
+  border-radius:var(--radius-md);
+  display:flex; align-items:center; justify-content:center; text-align:center;
+  color:var(--rg-ink-soft);
+  font-size:.78rem;
+  padding:1rem;
+  width:100%;
+}
+.image-placeholder .ph-title{ font-weight:700; color:var(--rg-black); display:block; margin-bottom:.25rem; }
+
+/* ---------- Trust strip ---------- */
+.trust-icon{
+  width:62px; height:62px; margin:0 auto 0.85rem;
+  display:flex; align-items:center; justify-content:center;
+  border-radius:50%;
+  background:rgba(255,255,255,0.1);
+  color:var(--rg-bronze-light);
+}
+.trust-card{ text-align:center; }
+.trust-card h4{ font-size:0.98rem; margin-bottom:.4rem; }
+.trust-card p{ font-size:.85rem; opacity:.85; margin:0; }
+
+/* ---------- Reviews ---------- */
+.review-card{
+  background:var(--rg-white);
+  border-radius:var(--radius-md);
+  box-shadow:var(--shadow-card);
+  padding:1.6rem;
+  height:100%;
+  border-top:3px solid var(--rg-red);
+}
+.review-stars{ color:var(--rg-bronze-light); letter-spacing:2px; }
+.review-avatar{
+  width:50px; height:50px; border-radius:50%;
+  background:var(--rg-parchment-2);
+  display:flex; align-items:center; justify-content:center;
+  font-family:var(--font-display); font-weight:700; color:var(--rg-red);
+}
+.verified-tag{ font-size:.72rem; font-weight:700; color:var(--rg-steel); text-transform:uppercase; letter-spacing:.04em; }
+
+/* ---------- Ingredient rows ---------- */
+.ingredient-row{ display:flex; gap:1.25rem; padding:1.5rem 0; border-bottom:1px solid rgba(23,17,15,0.1); }
+.ingredient-num{
+  width:42px; height:42px; flex-shrink:0; border-radius:4px;
+  background:var(--rg-black);
+  color:var(--rg-bronze-light);
+  display:flex; align-items:center; justify-content:center;
+  font-weight:700; font-family:var(--font-display);
+}
+.ingredient-tag{ font-size:.72rem; font-weight:700; text-transform:uppercase; letter-spacing:.05em; color:var(--rg-red); }
+
+/* ---------- Bonus cards ---------- */
+.bonus-card{
+  background:var(--rg-white);
+  border:1px solid var(--rg-parchment-2);
+  border-radius:var(--radius-md);
+  padding:1.5rem;
+  height:100%;
+  position:relative;
+}
+.bonus-flag{
+  position:absolute; top:-12px; left:1.25rem;
+  background:var(--rg-bronze-light); color:var(--rg-black);
+  font-size:.68rem; font-weight:800; letter-spacing:.05em;
+  padding:.3rem .8rem; border-radius:4px;
+}
+.bonus-price{ font-size:.85rem; color:var(--rg-ink-soft); }
+.bonus-price .strike{ text-decoration:line-through; opacity:.6; }
+.bonus-price .free{ color:var(--rg-red); font-weight:800; }
+
+/* ---------- Pricing ---------- */
+.price-card{
+  background:var(--rg-white);
+  border-radius:var(--radius-lg);
+  border:2px solid transparent;
+  box-shadow:var(--shadow-card);
+  padding:2rem 1.5rem;
+  text-align:center;
+  height:100%;
+  position:relative;
+  transition:transform .18s ease;
+}
+.price-card:hover{ transform:translateY(-4px); }
+.price-card.popular{ border-color:var(--rg-bronze-light); }
+.price-card .ribbon{
+  position:absolute; top:-14px; left:50%; transform:translateX(-50%);
+  background:var(--rg-red); color:var(--rg-white);
+  font-size:.72rem; font-weight:700; letter-spacing:.05em;
+  padding:.35rem 1rem; border-radius:4px; white-space:nowrap;
+}
+.price-card .plan-name{ font-family:var(--font-display); font-size:1.15rem; margin-bottom:.25rem; }
+.price-card .plan-supply{ font-size:.85rem; color:var(--rg-ink-soft); margin-bottom:1.1rem; }
+.price-card .big-price{ font-family:var(--font-display); font-size:2.5rem; color:var(--rg-red); line-height:1; }
+.price-card .per-bottle{ font-size:.85rem; color:var(--rg-ink-soft); }
+.price-card .total-line{ font-size:.85rem; margin:.9rem 0; color:var(--rg-ink-soft); }
+.price-card .strike{ text-decoration:line-through; opacity:.55; }
+
+/* ---------- Guarantee ---------- */
+.guarantee-seal{
+  width:150px; height:150px; border-radius:50%;
+  background:radial-gradient(circle at 35% 30%, var(--rg-bronze-light), var(--rg-bronze) 70%);
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  color:var(--rg-black); font-family:var(--font-display);
+  box-shadow:var(--shadow-soft);
+  text-align:center; margin:0 auto;
+  border:3px solid var(--rg-black);
+}
+.guarantee-seal .days{ font-size:2rem; font-weight:700; line-height:1; }
+.guarantee-seal .small{ font-size:.62rem; font-weight:700; letter-spacing:.06em; text-transform:uppercase; }
+
+/* ---------- FAQ ---------- */
+.accordion-button{ font-family:var(--font-body); font-weight:700; }
+.accordion-button:not(.collapsed){ color:var(--rg-red); background:var(--rg-parchment-2); }
+.accordion-button:focus{ box-shadow:0 0 0 3px rgba(160,26,48,0.22); }
+
+/* ---------- Footer ---------- */
+.rg-footer{ background:var(--rg-black); color:rgba(242,233,220,0.72); padding:3.5rem 0 1.5rem; }
+.rg-footer a{ color:rgba(242,233,220,0.72); }
+.rg-footer a:hover{ color:var(--rg-bronze-light); }
+.rg-footer h5{ color:var(--rg-white); font-family:var(--font-display); margin-bottom:1rem; }
+.rg-footer .legal-links a{ display:block; margin-bottom:.5rem; font-size:.88rem; }
+.footer-disclaimer{ font-size:.78rem; opacity:.6; border-top:1px solid rgba(255,255,255,0.1); padding-top:1.25rem; margin-top:2rem; }
+
+/* ---------- Sticky CTA ---------- */
+.sticky-cta{
+  position:fixed; bottom:0; left:0; right:0;
+  background:var(--rg-black);
+  padding:.75rem 1rem;
+  z-index:1000;
+  display:none;
+  align-items:center; justify-content:space-between;
+  box-shadow:0 -8px 24px rgba(0,0,0,0.35);
+  border-top:1px solid rgba(201,162,39,0.3);
+}
+.sticky-cta.show{ display:flex; }
+.sticky-cta span{ color:var(--rg-parchment); font-size:.85rem; font-weight:700; }
+
+/* ---------- Utility ---------- */
+.section-title{ margin-bottom:2.75rem; }
+.divider-bronze{ width:60px; height:3px; background:var(--rg-bronze); border-radius:2px; margin:0.9rem 0 1.4rem; }
+.section-red .divider-bronze, .section-black .divider-bronze{ background:var(--rg-bronze-light); }

@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+Disallow: /assets/js/
+Disallow: /404.html
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+Sitemap: https://happylivingalways.com/gluconara/sitemap.xml

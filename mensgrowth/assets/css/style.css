@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins, sans-serif;
+  font-weight: 400;
+  text-justify: auto !important;
+}
+
+body {
+  background-color: #fbfafa;
+}
+
+.divider-container {
+  background-color: #1c1d16;
+  color: white;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+#footer ul li {
+  list-style: none;
+}
+
+.banner-container .image-container img:hover {
+  /* transform: translateY(-5px); */
+
+  transform: scale3d(1.05, 1.04, 1.01);
+  transition: transform 0.5s ease-in-out;
+}
+
+.button-cyn {
+  background-color: #ffe145;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 4px rgb(107, 106, 106);
+  font-size: 16px;
+  cursor: pointer;
+}
+.button-cyn:hover {
+  background-color: #1c1d16;
+  color: white;
+}
+
+.footerImg {
+  background-color: #940023;
+  color: white;
+  padding: 20px 50px;
+}
+
+.banner-container {
+  background-color: #1c1d16;
+  color: white;
+}
+
+
+
+.navbar-brand img {
+  max-width: 220px;
+  max-height: 60px;
+  filter: invert();
+}
+
+.logo {
+  filter:  invert();
+}
+
+.divider-container.list-items ul li {
+  text-decoration: none;
+}
+
+/* .ingredients img{
+  max-width: 100px;
+  max-jeight: 100px;
+} */
+
+.ingredient-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 0 105px;
+}
+
+.featuresBox {
+  background: #1c1d16;
+  background: linear-gradient(-254deg, #1c1d16 42%, #1c1d16 34%, #1c1d16 90%);
+  color: white;
+}
+
+h1 {
+  color: #dba45d;
+  transition: transform 0.2s ease-in-out;
+}
+
+h1:hover {
+  transform: scale(1.02);
+}
+
+.bannerOrderButton {
+  animation: button 1.2s ease-in-out infinite;
+}
+
+@keyframes button {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.bonus h3 {
+  color: #1b5f8a;
+}
+
+.benefits .row img:hover {
+  border: 2px solid #1c1d16;
+  transform: translateY(-1.02em);
+  transition: transform 0.3s ease-in-out;
+}
+
+@keyframes payment {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.01);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.payment-card-section img {
+  animation: payment 1.2s ease-in-out infinite;
+}
+
+.Navbar-section {
+  background-color: #1c1d16;
+
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 1000;
+  /* border-bottom: #ccd8d9 2px solid; */
+  /* padding-bottom: 20px; */
+}
+
+.features {
+  background-image: url("/assets/images/BGlEAVES.png");
+  height: 100%;
+}
+
+.verticalLine {
+  margin: 0;
+  padding: 0;
+  width: 1px;
+  max-height: 850px;
+  background-color: white;
+}
+
+#footer {
+  background: rgb(44, 44, 44);
+  color: white;
+}
+
+@media screen and (max-width: 1210px) {
+  .ingredient-container {
+    padding: 0 15px;
+  }
+}
+
+.ingredient-container .ingredients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.4);
+  max-width: 300px;
+  height: 300px;
+  border-radius: 30px;
+  border: 2px solid #f1f1f1;
+}
+
+.ingredient-container .ingredients img {
+  border-radius: 30px;
+  object-fit: contain;
+  width: 90%;
+  margin: auto;
+}
+
+.highlight-container {
+  background-color: rgb(235, 232, 232);
+}
+
+.second-section {
+  max-width: 100%;
+  background-color: #d75d71;
+}
+.bonus-cards-section {
+  background-color: #ccd8d9;
+}
+.bonus-cards-container {
+  color: white;
+  gap: 50px;
+}
+.card {
+  width: 30%;
+  gap: 30px;
+  padding: auto;
+}
+
+#FREE {
+  background-color: rgb(237, 214, 86);
+  border-radius: 50px;
+  padding: 5px 20px;
+}
+
+.bonus1 {
+  background-color: rgb(219, 213, 213);
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.card {
+  border-radius: 30px;
+}
+
+.fa-star {
+  color: white;
+  background: white;
+}
+
+@media (max-width: 480px)  {
+  .banner-container .row .text-container.btn {
+    padding-left: 0 px;
+    margin-left: 0 rem !important;
+    margin-bottom: 0 rem !important;
+  }
+
+  .navbar-brand img {
+    max-width:150px !important;
+    max-height:20px !important;
+  }
+
+  .banner-container .row {
+    padding: 0 !important;
+  }
+
+  .ingredient-section .ingredient-container {
+    flex-direction: column;
+  }
+  .card {
+    width: 100%;
+  }
+  .free-shipping {
+    flex-direction: column;
+  }
+  #footer ul {
+    flex-direction: column;
+    gap: 1px;
+  }
+
+  .navbar-brand img {
+    min-height: 40px;
+    min-width: 40px;
+    max-width: 180px; 
+    max-height: 180px;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .ingredient-section .ingredient-container {
+    display: grid;
+  }
+
+  .bonus-cards-container {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+  }
+}

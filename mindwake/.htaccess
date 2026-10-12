@@ -1,0 +1,70 @@
+
+
+
+
+RewriteEngine On
+
+# Block Brazil
+RewriteCond %{ENV:GEOIP_COUNTRY_CODE} ^BR$ [NC,OR]
+
+# Block India
+RewriteCond %{ENV:GEOIP_COUNTRY_CODE} ^IN$ [NC,OR]
+
+# Block Boise, Idaho
+RewriteCond %{ENV:GEOIP_CITY} ^Boise$ [NC]
+RewriteRule ^ - [F,L]
+
+
+# ADD THESE RULES NEAR THE TOP OF YOUR EXISTING .htaccess
+# Keep RewriteEngine On only once if your file already has it.
+
+
+# ADD THESE RULES NEAR THE TOP OF YOUR EXISTING .htaccess
+# Keep RewriteEngine On only once if your file already has it.
+
+Options -Indexes -MultiViews
+RewriteEngine On
+
+# Hide internal protection files.
+RewriteCond %{THE_REQUEST} \s/+vpn-(?:gate|config)\.php(?:[?\s]) [NC]
+RewriteRule ^vpn-(?:gate|config)\.php$ - [R=404,L]
+RewriteRule ^\.vpn-cache(?:/|$) - [R=404,L]
+
+# Protect homepage.
+RewriteRule ^$ vpn-gate.php?file=index.html [END,QSA]
+
+# Protect existing .html files, including files in subfolders.
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^(.+\.html)$ vpn-gate.php?file=$1 [END,QSA]
+
+# OPTIONAL: if your website uses extensionless URLs such as /about instead of /about.html.
+RewriteCond %{DOCUMENT_ROOT}/$1.html -f
+RewriteRule ^(.+?)/?$ vpn-gate.php?file=$1.html [END,QSA]
+
+#only country code Block
+RewriteEngine On
+
+# Block Brazil
+RewriteCond %{ENV:GEOIP_COUNTRY_CODE} ^BR$ [NC,OR]
+
+# Block Boise, Idaho
+RewriteCond %{ENV:GEOIP_CITY} ^Boise$ [NC]
+RewriteRule ^ - [F,L]
+
+# Block India
+RewriteCond %{ENV:GEOIP_COUNTRY_CODE} ^IN$ [NC,OR]
+
+
+
+
+#for general website code
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([^/]+)$ $1.html [L]
+
+# To handle error documents.
+ErrorDocument 404 /404.html
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([^/]+)$ $1.html [L]

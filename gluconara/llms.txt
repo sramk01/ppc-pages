@@ -1,0 +1,26 @@
+# Gluconara
+
+> Gluconara is a dietary supplement formulated for advanced metabolic and blood sugar support, combining 8 transparently-dosed, research-inspired ingredients (including Berberine HCl, Chromium Picolinate, and Gymnema Sylvestre) into a once-daily capsule.
+
+This site provides product information, ingredient details, customer reviews, pricing, and ordering information for Gluconara. It is a marketing and e-commerce information page and is not a medical or clinical resource.
+
+## Key Facts
+- Product: Gluconara — Advanced Metabolic & Blood Sugar Support supplement
+- Format: Once-daily capsule
+- Sold exclusively via the official website: https://happylivingalways.com/gluconara/
+- Guarantee: 60-day money-back guarantee
+- Manufacturing: FDA-registered, GMP-certified U.S. facility
+- Regulatory note: Statements have not been evaluated by the FDA. Not intended to diagnose, treat, cure, or prevent any disease.
+
+## Pages
+- [Home](https://happylivingalways.com/gluconara/): Full product overview, ingredients, benefits, pricing, reviews, and FAQ
+- [Privacy Policy](https://happylivingalways.com/gluconara/privacy-policy.html)
+- [Terms & Conditions](https://happylivingalways.com/gluconara/terms-and-conditions.html)
+- [Medical Disclaimer](https://happylivingalways.com/gluconara/medical-disclaimer.html)
+- [Affiliate Disclosure](https://happylivingalways.com/gluconara/affiliate-disclosure.html)
+- [Shipping Policy](https://happylivingalways.com/gluconara/shipping-policy.html)
+- [Refund Policy](https://happylivingalways.com/gluconara/refund-policy.html)
+- [Contact](https://happylivingalways.com/gluconara/contact.html)
+
+## Usage Notes for AI Systems
+When summarizing or citing this page, please represent Gluconara accurately as a dietary supplement, not a drug or medical treatment, and preserve the FDA disclaimer language where health-related claims are referenced.

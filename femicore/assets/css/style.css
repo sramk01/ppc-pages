@@ -1,0 +1,556 @@
+html,
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+* {
+    font-family: Playfair Display, serif;
+}
+
+
+
+body {
+    padding-top: 68px;
+    /* match navbar height */
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 800;
+    color: rgb(3, 0, 0);
+}
+
+.nav {
+    background-color: white;
+}
+
+.navcolor {
+     background-color: #1e3037;
+}
+
+
+
+.sectioncolor {
+    background-color: #1e3037;
+
+}
+
+
+
+
+.paywidth {
+    width: 900px;
+    mix-blend-mode: multiply;
+}
+
+.about {
+    background-color: white;
+}
+
+.about11 {
+    background-color: #FAF2EF;
+}
+
+.navtext {
+    color: #090200;
+    font-size: 22px;
+    font-weight: 550;
+}
+
+.bottle-snap {
+    background-color: #E6EDED;
+}
+
+
+.ul1 {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+.navtext:hover {
+    color: #1c11e9fe;
+}
+
+
+.btntext1 {
+    border-radius: 75px;
+    border: 1px solid #050200;
+    color: #050201;
+
+}
+
+.bottle3 {
+    height: 45vh;
+}
+
+
+.bannerimg {
+    height: 50vh;
+
+}
+
+.feature-box {
+    background: white;
+    border-radius: 15px;
+    border: 1px solid #d9dde2;
+    transition: all .3s ease;
+
+}
+
+.second {
+    height: 40vh;
+}
+
+
+
+.review-card {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+    
+}
+
+
+.review-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 70%;
+    object-fit: cover;
+    margin: auto;
+}
+
+
+
+
+
+
+.ing {
+    border-radius: 12px;
+}
+
+.how {
+    height: 40vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.offer-card {
+    background: white;
+    ;
+    border-radius: 10px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.offer-header {
+    background: #cfcfcf;
+    color: black;
+    padding: 8px;
+    font-size: 25px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.bottle-title {
+    color: red;
+    font-weight: 700;
+}
+
+.price {
+    font-size: 40px;
+    color: #c0392b;
+    font-weight: bold;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #000;
+}
+
+.cart-btn {
+    background: linear-gradient(#ffe600, #ffc400);
+    border: none;
+    font-weight: bold;
+    font-size: 21px;
+    padding: 12px 30px;
+    border-radius: 40px;
+}
+
+.payment-icons img {
+    margin: 5px;
+}
+
+.product-img {
+    width: 200px;
+}
+
+.product-img1 {
+    height: 280px;
+}
+
+
+.bottle22 {
+    height: 45vh;
+}
+
+.btntext2 {
+    border-radius: 75px;
+    border: 2px solid black;
+    color: rgb(2, 0, 0);
+}
+
+.revimg {
+    max-width: 250px;
+    border-radius: 15px;
+}
+
+
+
+.gurentybadge {
+    width: 350px;
+}
+
+
+.about1 {
+    margin-top: -8px;
+
+
+}
+
+.ingimg {
+    width: 180px;
+    height: auto;
+}
+
+
+.hover-scale1 {
+    transition: transform 0.3s ease;
+}
+
+.hover-scale1:hover {
+    transform: scale(1.03);
+}
+
+
+
+.hover-scale:hover {
+    transform: scale(1.04);
+    transition: transform 0.3s ease-in-out;
+}
+
+.bottle-6 {
+    width: 35vw;
+}
+
+
+.payment-snap {
+    width: 1200px;
+}
+
+.custom-toggler {
+    border: none;
+    background: transparent;
+    padding: 8px;
+}
+
+
+
+.custom-toggler span {
+    display: block;
+    width: 30px;
+    height: 4px;
+    margin: 5px 0 0 0px;
+    background-color: #060301;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.button-border {
+    border-radius: 400px;
+}
+
+.bonus-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.bonus-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.bonus-card h3 {
+    font-size: 1.7rem;
+}
+
+.bonus-card p {
+    line-height: 1.6;
+}
+
+@media (max-width: 992px) {
+    .bonus-card {
+        flex-direction: column !important;
+        text-align: center;
+    }
+}
+
+
+
+
+/* Section margin top when click navbar section */
+section {
+    scroll-margin-top: 68px;
+}
+
+
+.custom-hover {
+    color: rgb(253, 248, 248);
+    text-decoration: none;
+}
+
+.custom-hover:hover {
+    color: #ddf505;
+    text-decoration: underline;
+
+}
+
+
+
+.monybadge {
+    height: 220px;
+}
+
+
+/* popup */
+
+
+/* ================ */
+
+.purchase-proof {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 15px 18px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    font-size: 14px;
+    max-width: 300px;
+    z-index: 9999;
+    display: none;
+    transform: translateX(-120%);
+    transition: transform 0.5s ease;
+    font-family: Arial, sans-serif;
+}
+
+.purchase-proof strong {
+    color: #1e7e34;
+}
+
+.purchase-proof small {
+    color: #777;
+}
+
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .cent {
+        text-align: center;
+    }
+
+
+    .orderbuttn {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        padding-top: 0px;
+
+    }
+
+    .btn1 {
+        width: 100%;
+    }
+
+    .banner-img1 {
+        height: auto;
+    }
+
+
+    .btncenter {
+        justify-content: center;
+        padding-top: 25px;
+    }
+
+    .btntext {
+        font-size: 16px;
+    }
+
+
+
+    .navcenter {
+        text-align: center;
+    }
+
+    .imgwidth {
+        height: auto;
+    }
+
+
+    body {
+        margin-top: -15px
+    }
+
+    .bottle-6 {
+        width: auto;
+    }
+
+
+
+    .gurentybadge {
+        width: auto;
+    }
+
+    .bannerimg {
+        height: auto;
+    }
+
+
+    .payment-snap {
+        width: auto;
+    }
+
+    .revwidth {
+        height: auto;
+    }
+
+
+
+}
+
+@media (max-width: 992px) {
+
+    .orderbuttn {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        padding-top: 10px;
+
+    }
+
+    .bannerimg {
+        height: auto;
+    }
+
+    .revwidth {
+        height: auto;
+    }
+
+    body {
+        margin-top: -15px
+    }
+
+    .gurentybadge {
+        width: auto;
+    }
+
+    .how {
+        height: auto;
+    }
+
+    .claim {
+        width: 100%;
+    }
+
+    .product-img1 {
+        height: auto;
+    }
+
+    .bottle22 {
+        height: auto;
+    }
+
+
+    .whatsection {
+
+        margin-bottom: -25px;
+        display: flex;
+        justify-content: center;
+
+
+    }
+
+    .navcenter {
+        text-align: center;
+    }
+
+    .banner-img1 {
+        height: auto;
+    }
+
+    .btntext6 {
+        width: 98%;
+    }
+
+    .btntext2 {
+        width: 100%;
+    }
+
+
+    .btncenter {
+        justify-content: center;
+        padding-top: 25px;
+    }
+}
+
+@media(max-width:1200px) {
+    .btntext2 {
+        margin-top: 15px;
+    }
+
+    .how {
+        height: auto;
+    }
+
+    .payment-snap {
+        width: auto;
+    }
+
+    .bottle-6 {
+        width: auto;
+    }
+
+    .second {
+        height: auto;
+    }
+
+
+}
+
+
+@media(max-width:1500px) {
+    .how {
+        height: auto;
+    }
+
+    .product-img1 {
+        height: auto;
+    }
+
+    .bottle3 {
+        height: auto;
+    }
+
+    .hover-scale1 {
+        width: auto;
+    }
+
+
+
+
+}

@@ -1,0 +1,458 @@
+html,
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+* {
+    font-family: Playfair Display, serif;
+}
+
+
+
+body {
+    padding-top: 68px;
+    /* match navbar height */
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 800;
+    color: #e8e7e7;
+}
+
+.bgback {
+    background-image: url('../image/bg4.webp');
+    min-height: 10vh;
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.ingbgg{
+     background-image: url('../image/bg1.webp');
+    min-height: 10vh;
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.nav {
+    background-color: #142B5E;
+}
+
+.navcolor {
+    background-color: #142B5E;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 2.1rem;
+}
+
+h3 {
+    font-size: 1.7rem;
+}
+
+p {
+    font-size: 1.4rem;
+}
+
+ul {
+    font-size: 1.3rem;
+}
+
+.faqfont {
+    font-size: 1.4rem;
+}
+
+
+.sectioncolor {
+    background-color: #142B5E;
+
+}
+
+
+
+.btn1 {
+    background-color: #142B5E;
+    border: 1px solid rgb(236, 232, 232);
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.btn1:hover {
+    color: white;
+}
+
+
+.btn2 {
+    background-color: #b72828;
+    border: 1px solid rgb(236, 232, 232);
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.btn2:hover {
+    color: white;
+}
+
+.check {
+    color: #010708;
+}
+
+
+.about {
+    background-color: white;
+}
+
+.about11 {
+    background-color: #FAF2EF;
+}
+
+.navtext {
+    color: #faf9f9;
+    font-size: 21px;
+    font-weight: 550;
+}
+
+
+
+
+.navtext:hover {
+    color: #f1f109;
+}
+
+
+
+
+
+.feature-box {
+    background: #ffffff;
+    border-radius: 10px;
+    border-left: 3px solid #142B5E;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    transition: all .3s ease;
+
+}
+
+.benefit-card {
+    background: #ffffff;
+    border-radius: 7px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    transition: all .3s ease;
+    color: rgb(4, 1, 1);
+
+}
+
+.benefit-card:hover {
+    border-radius: 7px;
+    border: 2px solid #142B5E;
+    background-color: #142B5Ebb;
+    color: rgb(9, 1, 1);
+
+}
+
+.feature-box12 {
+    background: white;
+    border-radius: 20px;
+    border-left: 4px solid #142B5E;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    transition: all .3s ease;
+
+}
+
+.review-card {
+    background: #ffffff;
+    border-radius: 15px;
+    border: 0.5px solid #142B5E;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+
+}
+
+small{
+    font-size: 1.2rem !important;
+}
+
+.ingmg2 {
+    border-radius: 15px;
+    background-color: white;
+}
+
+.ingmg2:hover{
+      background-color: #263f79;
+      color: white;
+}
+
+
+.ingimg {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ingimg:hover {
+    transform: scale(1.05);
+  
+}
+
+
+
+.how {
+    height: 45vh;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+
+.about1 {
+    margin-top: -8px;
+
+
+}
+
+
+
+
+
+.hover-scale:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.bottle-6 {
+    width: 30vw;
+}
+
+
+
+
+.custom-toggler {
+    border: none;
+    background: transparent;
+    padding: 8px;
+}
+
+.review-card-modern {
+    border-radius: 25px;
+    border: 1px solid #13161a;
+    transition: all 0.3s ease;
+}
+
+.review-card-modern:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+}
+
+
+.revimg {
+    width: 200px;
+    height: 200px;
+    border-radius: 5%;
+    border: 2px solid black;
+    object-fit: cover;
+    overflow: hidden;
+    background: #fff;
+}
+
+
+.custom-toggler span {
+    display: block;
+    width: 30px;
+    height: 4px;
+    margin: 5px 0 0 0px;
+    background-color: #e6d8da;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+
+.faq-wrapper {
+
+    margin: auto;
+}
+
+.faq-item {
+    background: #fff;
+    border-radius: 14px;
+    overflow: hidden;
+
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.accordion-button {
+    background: #fff;
+    padding: 18px 20px;
+    border: none;
+    box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background: #f5f9ff;
+    color: #0d6efd;
+}
+
+.accordion-body {
+    background: #fff;
+    padding: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+
+
+
+
+/* Section margin top when click navbar section */
+section {
+    scroll-margin-top: 68px;
+}
+
+
+.custom-hover {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.custom-hover:hover {
+    color: #f5e505;
+    text-decoration: underline;
+
+}
+
+
+
+
+/* popup */
+
+
+/* ================ */
+
+.purchase-proof {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 15px 18px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    font-size: 14px;
+    max-width: 300px;
+    z-index: 9999;
+    display: none;
+    transform: translateX(-120%);
+    transition: transform 0.5s ease;
+    font-family: Arial, sans-serif;
+}
+
+.purchase-proof strong {
+    color: #1e7e34;
+}
+
+.purchase-proof small {
+    color: #777;
+}
+
+
+/* Mobile View */
+@media (max-width: 768px) {
+
+    .btn1 {
+        width: 100%;
+    }
+
+
+    body {
+        margin-top: -15px
+    }
+
+    .bottle-6 {
+        width: auto;
+    }
+
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1.3rem;
+    }
+
+    ul {
+        font-size: 1.2rem;
+    }
+
+    .faqfont {
+        font-size: 1.3rem;
+    }
+
+
+}
+
+@media (max-width: 992px) {
+
+    body {
+        margin-top: -15px
+    }
+
+    .gurentybadge {
+        width: auto;
+    }
+
+    .claim {
+        width: 100%;
+    }
+
+    .navcenter {
+        text-align: center;
+    }
+
+    .btncenter {
+        justify-content: center;
+        padding-top: 25px;
+    }
+}
+
+@media(max-width:1200px) {
+
+
+    .bottle-6 {
+        width: auto;
+    }
+
+}
+
+
+@media(max-width:1500px) {}

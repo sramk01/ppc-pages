@@ -1,0 +1,182 @@
+[
+  {
+    "filename": "cognivex-favicon.webp",
+    "size": "512x512",
+    "width": 512,
+    "height": 512,
+    "alt": "Cognivex logo favicon",
+    "title": "Cognivex logo favicon",
+    "prompt": "Minimal square logo icon"
+  },
+  {
+    "filename": "cognivex-og-image.webp",
+    "size": "1200x630",
+    "width": 1200,
+    "height": 630,
+    "alt": "Cognivex social share image",
+    "title": "Cognivex social share image",
+    "prompt": "Wide social share graphic with product name and tagline"
+  },
+  {
+    "filename": "cognivex-twitter-image.webp",
+    "size": "1200x600",
+    "width": 1200,
+    "height": 600,
+    "alt": "Cognivex Twitter card image",
+    "title": "Cognivex Twitter card image",
+    "prompt": "Wide Twitter/X card graphic with product name and tagline"
+  },
+  {
+    "filename": "cognivex-hero.webp",
+    "size": "1600x900",
+    "width": 1600,
+    "height": 900,
+    "alt": "Cognivex Memory Retention, Focus & Clarity, Brain Health hero banner",
+    "title": "Cognivex Memory Retention, Focus & Clarity, Brain Health hero banner",
+    "prompt": "Professional photo matching the section context"
+  },
+  {
+    "filename": "cognivex-certified.webp",
+    "size": "300x300",
+    "width": 300,
+    "height": 300,
+    "alt": "Certification / trust badge",
+    "title": "Certification / trust badge",
+    "prompt": "Professional photo matching the section context"
+  },
+  {
+    "filename": "cognivex-product-main.webp",
+    "size": "1200x1200",
+    "width": 1200,
+    "height": 1200,
+    "alt": "Cognivex bottle product photo",
+    "title": "Cognivex bottle product photo",
+    "prompt": "Professional photo matching the section context"
+  },
+  {
+    "filename": "cognivex-ingredient-1.webp",
+    "size": "600x600",
+    "width": 600,
+    "height": 600,
+    "alt": "Methylene Blue",
+    "title": "Methylene Blue",
+    "prompt": "Professional photo matching the section context"
+  },
+  {
+    "filename": "cognivex-ingredient-2.webp",
+    "size": "600x600",
+    "width": 600,
+    "height": 600,
+    "alt": "Zinc (as Zinc Citrate)",
+    "title": "Zinc (as Zinc Citrate)",
+    "prompt": "Professional photo matching the section context"
+  },
+  {
+    "filename": "cognivex-ingredient-3.webp",
+    "size": "600x600",
+    "width": 600,
+    "height": 600,
+    "alt": "Potassium (as Potassium Chloride)",
+    "title": "Potassium (as Potassium Chloride)",
+    "prompt": "Professional photo matching the section context"
+  },
+  {
+    "filename": "cognivex-ingredient-4.webp",
+    "size": "600x600",
+    "width": 600,
+    "height": 600,
+    "alt": "Purified Water",
+    "title": "Purified Water",
+    "prompt": "Professional photo matching the section context"
+  },
+  {
+    "filename": "cognivex-ingredient-5.webp",
+    "size": "600x600",
+    "width": 600,
+    "height": 600,
+    "alt": "Sodium Benzoate",
+    "title": "Sodium Benzoate",
+    "prompt": "Professional photo matching the section context"
+  },
+  {
+    "filename": "cognivex-ingredient-6.webp",
+    "size": "600x600",
+    "width": 600,
+    "height": 600,
+    "alt": "Potassium Sorbate",
+    "title": "Potassium Sorbate",
+    "prompt": "Professional photo matching the section context"
+  },
+  {
+    "filename": "cognivex-customer-review-1.webp",
+    "size": "200x200",
+    "width": 200,
+    "height": 200,
+    "alt": "Patricia L., 68 avatar",
+    "title": "Patricia L., 68 avatar",
+    "prompt": "Friendly headshot placeholder, neutral background"
+  },
+  {
+    "filename": "cognivex-customer-review-2.webp",
+    "size": "200x200",
+    "width": 200,
+    "height": 200,
+    "alt": "Harold B., 66 avatar",
+    "title": "Harold B., 66 avatar",
+    "prompt": "Friendly headshot placeholder, neutral background"
+  },
+  {
+    "filename": "cognivex-customer-review-3.webp",
+    "size": "200x200",
+    "width": 200,
+    "height": 200,
+    "alt": "Evelyn S., 75 avatar",
+    "title": "Evelyn S., 75 avatar",
+    "prompt": "Friendly headshot placeholder, neutral background"
+  },
+  {
+    "filename": "cognivex-guarantee.webp",
+    "size": "400x400",
+    "width": 400,
+    "height": 400,
+    "alt": "Cognivex guarantee badge",
+    "title": "Cognivex guarantee badge",
+    "prompt": "Professional photo matching the section context"
+  },
+  {
+    "filename": "cognivex-discount.webp",
+    "size": "400x400",
+    "width": 400,
+    "height": 400,
+    "alt": "Limited-time discount badge",
+    "title": "Limited-time discount badge",
+    "prompt": "Professional photo matching the section context"
+  },
+  {
+    "filename": "cognivex-product-1-bottle.webp",
+    "size": "1000x900",
+    "width": 1000,
+    "height": 900,
+    "alt": "1 Bottle plan",
+    "title": "1 Bottle plan",
+    "prompt": "Professional photo matching the section context"
+  },
+  {
+    "filename": "cognivex-product-3-bottles.webp",
+    "size": "1000x900",
+    "width": 1000,
+    "height": 900,
+    "alt": "3 Bottles plan",
+    "title": "3 Bottles plan",
+    "prompt": "Professional photo matching the section context"
+  },
+  {
+    "filename": "cognivex-product-6-bottles.webp",
+    "size": "1000x900",
+    "width": 1000,
+    "height": 900,
+    "alt": "6 Bottles plan",
+    "title": "6 Bottles plan",
+    "prompt": "Professional photo matching the section context"
+  }
+]

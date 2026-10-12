@@ -1,0 +1,419 @@
+html,
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+* {
+    font-family: Playfair Display, serif;
+}
+
+
+
+body {
+    padding-top: 68px;
+    /* match navbar height */
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.herobg{
+    background: linear-gradient(135deg,#2E2410,#0f0f0f);
+}
+
+.nav {
+    background-color: #070707;
+}
+
+
+.sectioncolor {
+    background-color: #070707;
+
+}
+
+.navcolor {
+    background-color: #070707;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+p {
+    font-size: 1.4rem;
+}
+
+ul {
+    font-size: 1.4rem;
+}
+
+.small {
+    font-size: 1.2rem;
+}
+
+.faq {
+    font-size: 1.4rem;
+}
+
+
+
+
+.btn1 {
+    background-color: #EFBA4F;
+    color: rgb(12, 1, 1);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.btn2 {
+    border: 0.5px solid #00285B;
+    color: rgb(23, 1, 1);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.btn1:hover {
+    color: rgb(16, 0, 0);
+}
+
+.btn2:hover {
+    background-color: #53B8FE;
+    color: rgb(248, 248, 248);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.navtext {
+    color: #fcfcfc; 
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.howimg {
+    width: 300px;
+}
+
+
+.navtext:hover {
+    color: #f1f109;
+}
+
+.bannerimg {
+    border-radius: 10px;
+}
+
+.feature-box {
+    border-radius: 20px;
+    border: 0.5px solid #c0b5bb;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    transition: all .3s ease;
+    background-color: white;
+    padding: 15px;
+
+}
+
+.benefit-card {
+    background-color: #0707075f;
+    border-radius: 10px;
+}
+
+.review-card {
+    background: #ffffff;
+    border-radius: 15px;
+    border: 0.5px solid #B4C424;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+    text-align: center;
+}
+
+.ingimg{
+    max-width: 220px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.feature-card {
+    border-radius: 10px;
+    border: 0.5px solid #7c7579;
+}
+
+.revimg {
+    width: 210px;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 10%;
+    border: 2px solid #30074B;
+
+}
+
+.bonus11{
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid #1c4e55;
+}
+
+
+.bottle-6 {
+    width: 30vw;
+}
+
+.ingbg {
+    background: linear-gradient(135deg, #1c4e55 45%, #113663);
+}
+
+.payment-snap {
+    width: 1200px;
+}
+
+.custom-toggler {
+    border: none;
+    background: transparent;
+    padding: 8px;
+}
+
+
+
+.custom-toggler span {
+    display: block;
+    width: 26px;
+    height: 4px;
+    margin: 5px 0 0 0px;
+    background-color: #efecec;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+
+/* Section margin top when click navbar section */
+section {
+    scroll-margin-top: 68px;
+}
+
+
+.custom-hover {
+    color: rgb(255, 255, 248);
+    text-decoration: none;
+}
+
+.custom-hover:hover {
+    color: #f5d105;
+    text-decoration: underline;
+
+}
+
+
+.gurenty {
+    background-color: #f3f3f3;
+    border-radius: 30px;
+    color: rgb(9, 0, 0);
+}
+
+
+/* popup */
+
+
+/* ================ */
+
+.purchase-proof {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 15px 18px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    font-size: 14px;
+    max-width: 300px;
+    z-index: 9999;
+    display: none;
+    transform: translateX(-120%);
+    transition: transform 0.5s ease;
+    font-family: Arial, sans-serif;
+}
+
+.purchase-proof strong {
+    color: #1e7e34;
+}
+
+.purchase-proof small {
+    color: #777;
+}
+
+@media (max-width:567px){
+    .badge{
+        max-width: 250px !important;
+    }
+}
+
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .badge{
+        margin-top: 10px !important;
+    }
+
+    .navcenter {
+        text-align: center;
+    }
+
+    body {
+        margin-top: -15px
+    }
+
+    .bottle-6 {
+        width: auto;
+    }
+
+    .revwidth {
+        height: auto;
+    }
+
+
+    h1 {
+        font-size: 1.7rem !important;
+    }
+
+    h2 {
+        font-size: 1.6rem !important;
+        font-weight: 600;
+    }
+
+    h3 {
+        font-size: 1.5rem !important;
+        font-weight: 600;
+    }
+
+    p {
+        font-size: 1.3rem !important;
+    }
+
+    ul {
+        font-size: 1.3rem !important;
+    }
+
+    .small {
+        font-size: 1rem !important;
+    }
+
+    .faq {
+        font-size: 1.3rem !important;
+    }
+
+    .list-inline {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .list-inline-item {
+        display: block;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .list-inline-item a {
+        display: block;
+        padding: 1px 0;
+    }
+
+    .feature-box {
+        text-align: center;
+    }
+
+
+}
+
+@media (max-width: 992px) {
+    .btn1 {
+        width: 96%;
+        font-size: 1.3rem !important;
+    }
+
+    .btn2 {
+        width: 96% !important;
+        font-size: 1.3rem !important;
+    }
+
+
+
+    body {
+        margin-top: -15px
+    }
+
+
+    .claim {
+        width: 100%;
+    }
+
+    .bottle22 {
+        height: auto;
+    }
+
+    .navcenter {
+        text-align: center;
+    }
+
+   
+
+}
+
+@media(max-width:1200px) {
+  
+
+    .payment-snap {
+        width: auto;
+    }
+
+    .bottle-6 {
+        width: auto;
+    }
+
+    .second {
+        height: auto;
+    }
+
+    .howimg {
+        width: auto;
+    }
+
+}
+
+
+@media(max-width:1500px) {
+    .how {
+        height: auto;
+    }
+
+    .product-img1 {
+        height: auto;
+    }
+
+    .bottle3 {
+        height: auto;
+    }
+
+    .hover-scale1 {
+        width: auto;
+    }
+
+
+
+}

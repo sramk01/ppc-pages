@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /assets/js/
+Disallow: /404.html
+
+Sitemap: https://happylivingalways.com/alpharock/sitemap.xml

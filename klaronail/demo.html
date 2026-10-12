@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Bonus Section - Bootstrap 5</title>
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <style>
+    :root {
+      --bg-forest-green: #2d6a36;
+      --badge-navy: #0e2b5c;
+      --price-gray-bg: #efefef;
+      --card-radius: 4px;
+      --strikethrough-red: #d93838;
+      --badge-green-accent: #28a745;
+    }
+
+    body {
+      background-color: var(--bg-forest-green);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: #333;
+      padding-bottom: 3rem;
+    }
+
+    /* Controls Bar */
+    .editor-toolbar {
+      background-color: rgba(0, 0, 0, 0.25);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+      position: sticky;
+      top: 0;
+      z-index: 1020;
+    }
+
+    /* Header Title Styling */
+    .section-header-title {
+      font-weight: 800;
+      font-size: clamp(1.8rem, 4vw, 2.75rem);
+      color: #ffffff;
+      letter-spacing: -0.5px;
+    }
+
+    .section-header-title .underline-accent {
+      text-decoration: underline;
+      text-underline-offset: 6px;
+      text-decoration-thickness: 3px;
+    }
+
+    /* Card Customization */
+    .bonus-card {
+      background: #ffffff;
+      border: none;
+      border-radius: var(--card-radius);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .bonus-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+    }
+
+    /* Badges */
+    .badge-navy {
+      background-color: var(--badge-navy);
+      color: #ffffff;
+      font-weight: 800;
+      letter-spacing: 1.2px;
+      padding: 9px 24px;
+      border-radius: 0;
+      font-size: 1.05rem;
+      display: inline-block;
+      text-transform: uppercase;
+    }
+
+    .badge-free-box {
+      background-color: var(--price-gray-bg);
+      color: #111111;
+      font-weight: 800;
+      padding: 6px 18px;
+      border-radius: 0;
+      font-size: 1.05rem;
+      display: inline-block;
+      letter-spacing: 0.3px;
+    }
+
+    /* Strikethrough & Pricing */
+    .strikethrough-price {
+      text-decoration: line-through;
+      color: var(--strikethrough-red);
+      font-weight: 800;
+      margin-left: 2px;
+    }
+
+    .retail-price-label {
+      font-weight: 800;
+      color: #111111;
+      font-size: 1.15rem;
+    }
+
+    /* Content Typography */
+    .bonus-headline {
+      color: #111111;
+      font-weight: 800;
+      font-size: 1.35rem;
+      line-height: 1.3;
+      margin-top: 0.8rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .bonus-description {
+      color: #555555;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+
+    /* Book Mockup Frame & Digital Tag */
+    .book-wrapper {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+      max-width: 320px;
+    }
+
+    .book-container {
+      position: relative;
+      background: #111;
+      border-radius: 6px;
+      box-shadow: 12px 18px 25px rgba(0,0,0,0.35), 2px 2px 6px rgba(0,0,0,0.2);
+      overflow: hidden;
+      aspect-ratio: 3/4;
+    }
+
+    .book-cover-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Digital Download Pill Tag */
+    .digital-download-pill {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background-color: var(--badge-green-accent);
+      color: #ffffff;
+      font-size: 0.65rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      padding: 6px 12px;
+      border-radius: 50px;
+      line-height: 1.15;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      z-index: 10;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      letter-spacing: 0.5px;
+    }
+
+    /* Editable Fields Hover Indicator */
+    [contenteditable="true"] {
+      outline: 1px dashed transparent;
+      transition: outline 0.2s ease, background-color 0.2s ease;
+      border-radius: 2px;
+    }
+
+    .editable-mode [contenteditable="true"]:hover {
+      outline: 1px dashed #28a745;
+      background-color: rgba(40, 167, 69, 0.05);
+      cursor: text;
+    }
+
+    .editable-mode [contenteditable="true"]:focus {
+      outline: 2px solid #28a745;
+      background-color: rgba(40, 167, 69, 0.08);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="editor-toolbar py-2 px-3 text-white mb-4">
+    <div class="container d-flex flex-wrap align-items-center justify-content-between gap-2">
+      <div class="d-flex align-items-center gap-2">
+        <i class="fa-solid fa-wand-magic-sparkles text-warning fs-5"></i>
+        <span class="fw-bold small text-uppercase tracking-wider">Live Preview & Customizer</span>
+      </div>
+      <div class="d-flex align-items-center gap-2">
+        <button id="toggleEditBtn" class="btn btn-sm btn-outline-light d-flex align-items-center gap-2">
+          <i class="fa-solid fa-pen-to-square"></i>
+          <span>Enable Live Editing</span>
+        </button>
+        <button id="resetContentBtn" class="btn btn-sm btn-light text-dark fw-bold">
+          <i class="fa-solid fa-arrow-rotate-left me-1"></i> Reset Content
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <section class="py-2">
+    <div class="container">
+      
+      <!-- Section Header -->
+      <div class="text-center mb-5">
+        <h1 class="section-header-title mb-0" id="mainSectionTitle" contenteditable="false">
+          Order 6 Bottles <br class="d-sm-none">
+          and <span class="underline-accent">Get 3 FREE Bonuses!</span>
+        </h1>
+      </div>
+
+      <!-- Bonus Cards Container -->
+      <div class="row justify-content-center">
+        <div class="col-lg-10 col-xl-9">
+
+          <div class="card bonus-card p-4 p-md-5 mb-4" id="card1">
+            <div class="row align-items-center g-4">
+              <div class="col-md-7">
+                <span class="badge badge-navy" id="b1-badge" contenteditable="false">BONUS #1</span>
+                <h2 class="bonus-headline" id="b1-title" contenteditable="false">
+                  Clear Skin: Quick & Easy Hacks To Finally Banish Eczema, Psoriasis And Cold Sores
+                </h2>
+                <p class="bonus-description" id="b1-desc" contenteditable="false">
+                  Learn simple, natural ways to calm irritated skin, reduce redness, and control flare-ups. Discover easy habits and hidden triggers to avoid, so your skin feels healthier, smoother, and more comfortable every day.
+                </p>
+                <div class="d-flex align-items-center flex-wrap gap-2">
+                  <span class="retail-price-label">
+                    Retail Price – <span class="strikethrough-price" id="b1-price" contenteditable="false">$79</span>
+                  </span>
+                  <span class="badge-free-box" id="b1-free-text" contenteditable="false">Today: FREE</span>
+                </div>
+              </div>
+              <div class="col-md-5 text-center">
+                <div class="book-wrapper mx-auto">
+                  <div class="digital-download-pill">DIGITAL<br>DOWNLOAD</div>
+                  <div class="book-container">
+                    <!-- Embedded Canvas Generated SVG Cover 1 -->
+                    <svg class="book-cover-img" viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+                      <rect width="300" height="400" fill="#f4f7f4"/>
+                      <rect x="0" y="0" width="300" height="400" fill="#2d6a36" opacity="0.05"/>
+                      <circle cx="150" cy="180" r="70" fill="#2d6a36" opacity="0.15"/>
+                      <path d="M120 180 Q150 130 180 180 T240 180" stroke="#2d6a36" stroke-width="4" fill="none"/>
+                      <text x="150" y="70" font-family="sans-serif" font-weight="900" font-size="22" fill="#0e2b5c" text-anchor="middle">CLEAR SKIN</text>
+                      <text x="150" y="92" font-family="sans-serif" font-weight="700" font-size="12" fill="#2d6a36" text-anchor="middle" letter-spacing="1">QUICK &amp; EASY HACKS</text>
+                      <!-- Mortar & Pestle Illustration -->
+                      <g transform="translate(100, 140)">
+                        <path d="M20 50 C20 80 80 80 80 50 Z" fill="#8d5b4c"/>
+                        <path d="M15 45 C15 35 85 35 85 45 Z" fill="#a06a58"/>
+                        <path d="M60 20 L40 55" stroke="#6d4236" stroke-width="10" stroke-linecap="round"/>
+                        <circle cx="35" cy="30" r="6" fill="#2d6a36"/>
+                        <circle cx="65" cy="35" r="8" fill="#4a9355"/>
+                      </g>
+                      <rect x="20" y="300" width="260" height="60" fill="#2d6a36"/>
+                      <text x="150" y="325" font-family="sans-serif" font-weight="700" font-size="11" fill="#ffffff" text-anchor="middle">TO FINALLY BANISH ECZEMA,</text>
+                      <text x="150" y="343" font-family="sans-serif" font-weight="700" font-size="11" fill="#ffffff" text-anchor="middle">PSORIASIS AND COLD SORES</text>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card bonus-card p-4 p-md-5 mb-4" id="card2">
+            <div class="row align-items-center g-4">
+              <!-- Mobile: Order 2 (Bottom), Desktop: Order 1 (Left) -->
+              <div class="col-md-5 text-center order-2 order-md-1">
+                <div class="book-wrapper mx-auto">
+                  <div class="digital-download-pill">DIGITAL<br>DOWNLOAD</div>
+                  <div class="book-container">
+                    <!-- Embedded Canvas Generated SVG Cover 2 -->
+                    <svg class="book-cover-img" viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+                      <rect width="300" height="400" fill="#fcf8f6"/>
+                      <rect x="0" y="0" width="300" height="400" fill="#0e2b5c" opacity="0.03"/>
+                      <text x="150" y="65" font-family="sans-serif" font-weight="900" font-size="22" fill="#0e2b5c" text-anchor="middle">PERFECT FEET</text>
+                      <!-- Hand & Foot Illustration Placeholder -->
+                      <g transform="translate(85, 90)">
+                        <path d="M30 80 C30 30 70 20 80 50 C90 80 60 110 30 80 Z" fill="#e8beac"/>
+                        <circle cx="45" cy="30" r="7" fill="#e8beac"/>
+                        <circle cx="58" cy="27" r="6" fill="#e8beac"/>
+                        <circle cx="70" cy="29" r="5" fill="#e8beac"/>
+                        <circle cx="80" cy="34" r="4" fill="#e8beac"/>
+                      </g>
+                      <rect x="25" y="270" width="250" height="75" fill="#2d6a36"/>
+                      <text x="150" y="295" font-family="sans-serif" font-weight="800" font-size="12" fill="#ffffff" text-anchor="middle">REGROW STRONG, CLEAR NAILS</text>
+                      <text x="150" y="318" font-family="sans-serif" font-weight="700" font-size="11" fill="#ffffff" text-anchor="middle">IN RECORD TIME AND</text>
+                      <text x="150" y="333" font-family="sans-serif" font-weight="700" font-size="11" fill="#ffffff" text-anchor="middle">WITH ZERO EFFORT</text>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <!-- Mobile: Order 1 (Top), Desktop: Order 2 (Right) -->
+              <div class="col-md-7 order-1 order-md-2">
+                <span class="badge badge-navy" id="b2-badge" contenteditable="false">BONUS #2</span>
+                <h2 class="bonus-headline" id="b2-title" contenteditable="false">
+                  Perfect Feet: Regrow Strong, Clear Nails In Record Time And With Zero Effort
+                </h2>
+                <p class="bonus-description" id="b2-desc" contenteditable="false">
+                  Discover easy daily tips to strengthen nails, support faster regrowth, and improve appearance. Learn simple routines that help restore your feet, reduce damage, and keep them looking clean, smooth, and healthy.
+                </p>
+                <div class="d-flex align-items-center flex-wrap gap-2">
+                  <span class="retail-price-label">
+                    Retail Price – <span class="strikethrough-price" id="b2-price" contenteditable="false">$67</span>
+                  </span>
+                  <span class="badge-free-box" id="b2-free-text" contenteditable="false">Today: FREE</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card bonus-card p-4 p-md-5 mb-2" id="card3">
+            <div class="row align-items-center g-4">
+              <div class="col-md-7">
+                <span class="badge badge-navy" id="b3-badge" contenteditable="false">BONUS #3</span>
+                <h2 class="bonus-headline" id="b3-title" contenteditable="false">
+                  Move Without Pain: Unlock Your Hips and Knees For Everyday Comfort
+                </h2>
+                <p class="bonus-description" id="b3-desc" contenteditable="false">
+                  Discover simple movements to improve flexibility, reduce stiffness, and support healthy hips and knees. Learn quick daily stretches that help ease discomfort, improve mobility, and keep your lower body moving freely.
+                </p>
+                <div class="d-flex align-items-center flex-wrap gap-2">
+                  <span class="retail-price-label">
+                    Retail Price – <span class="strikethrough-price" id="b3-price" contenteditable="false">$69</span>
+                  </span>
+                  <span class="badge-free-box" id="b3-free-text" contenteditable="false">Today: FREE</span>
+                </div>
+              </div>
+              <div class="col-md-5 text-center">
+                <div class="book-wrapper mx-auto">
+                  <div class="digital-download-pill">DIGITAL<br>DOWNLOAD</div>
+                  <div class="book-container">
+                    <!-- Embedded Canvas Generated SVG Cover 3 -->
+                    <svg class="book-cover-img" viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+                      <rect width="300" height="400" fill="#f5f7f9"/>
+                      <rect x="0" y="0" width="300" height="400" fill="#0e2b5c" opacity="0.04"/>
+                      <rect x="0" y="35" width="300" height="45" fill="#0e2b5c"/>
+                      <text x="150" y="64" font-family="sans-serif" font-weight="900" font-size="18" fill="#ffffff" text-anchor="middle">MOVE WITHOUT PAIN</text>
+                      
+                      <!-- Legs/Stretches Illustration -->
+                      <g transform="translate(70, 110)">
+                        <path d="M30 130 L90 50 L130 110" stroke="#0e2b5c" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                        <circle cx="90" cy="35" r="14" fill="#e8beac"/>
+                        <rect x="20" y="125" width="30" height="15" rx="5" fill="#2d6a36"/>
+                        <rect x="125" y="105" width="30" height="15" rx="5" fill="#2d6a36"/>
+                      </g>
+
+                      <rect x="25" y="240" width="250" height="50" fill="#ffffff" rx="4"/>
+                      <text x="150" y="262" font-family="sans-serif" font-weight="800" font-size="12" fill="#2d6a36" text-anchor="middle">UNLOCK YOUR HIPS</text>
+                      <text x="150" y="278" font-family="sans-serif" font-weight="800" font-size="12" fill="#2d6a36" text-anchor="middle">AND KNEES</text>
+                      
+                      <rect x="0" y="345" width="300" height="35" fill="#2d6a36"/>
+                      <text x="150" y="367" font-family="sans-serif" font-weight="800" font-size="11" fill="#ffffff" text-anchor="middle">FOR EVERYDAY COMFORT</text>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script class="custom-script">
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggleEditBtn = document.getElementById('toggleEditBtn');
+      const resetBtn = document.getElementById('resetContentBtn');
+      const editableElements = document.querySelectorAll('[contenteditable]');
+      let isEditing = false;
+
+      // Cache initial innerHTML state for reset
+      const initialState = {};
+      editableElements.forEach((el, index) => {
+        initialState[index] = el.innerHTML;
+      });
+
+      // Toggle edit mode
+      toggleEditBtn.addEventListener('click', () => {
+        isEditing = !isEditing;
+        document.body.classList.toggle('editable-mode', isEditing);
+        
+        editableElements.forEach(el => {
+          el.setAttribute('contenteditable', isEditing ? 'true' : 'false');
+        });
+
+        if (isEditing) {
+          toggleEditBtn.classList.remove('btn-outline-light');
+          toggleEditBtn.classList.add('btn-success');
+          toggleEditBtn.innerHTML = '<i class="fa-solid fa-check"></i> <span>Editing Enabled (Click Text)</span>';
+        } else {
+          toggleEditBtn.classList.remove('btn-success');
+          toggleEditBtn.classList.add('btn-outline-light');
+          toggleEditBtn.innerHTML = '<i class="fa-solid fa-pen-to-square"></i> <span>Enable Live Editing</span>';
+        }
+      });
+
+      // Reset content back to original
+      resetBtn.addEventListener('click', () => {
+        editableElements.forEach((el, index) => {
+          if (initialState[index] !== undefined) {
+            el.innerHTML = initialState[index];
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+Disallow: /assets/js/
+Disallow: /404.html
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://happylivingalways.com/honeyfil/sitemap.xml

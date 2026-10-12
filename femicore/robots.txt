@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /order
+Allow: /
+
+Sitemap: https://happylivingalways.com/femicore/sitemap.xml
